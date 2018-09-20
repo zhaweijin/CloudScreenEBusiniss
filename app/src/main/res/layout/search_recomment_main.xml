@@ -1,0 +1,296 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/search_recomment_main_layout_margin_top_51"
+        android:layout_marginRight="@dimen/search_recomment_main_layout_margin_right_113"
+        android:orientation="vertical"
+        android:layout_width="@dimen/length_120"
+        android:layout_height="@dimen/length_200">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/search_qrcode"
+            android:layout_width="@dimen/length_120"
+            android:layout_height="@dimen/length_120" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:text="手机扫描输入"
+            android:id="@+id/qr_text"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginTop="@dimen/search_recomment_search_qr_text_margin_top_17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/top_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/search_recomment_search_top_main_top_53"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/search_recomment_commotity_search_title_margin_left_48"
+            android:text="商品搜索"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_32" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_60"
+            android:layout_marginLeft="@dimen/length_48"
+            android:layout_marginTop="@dimen/length_7"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_search_key"
+                android:layout_width="@dimen/serarch_layout_search_key_width_573"
+                android:layout_height="match_parent"
+                android:background="@drawable/search_input_no_focus_bg">
+
+                <EditText
+                    android:id="@+id/search_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/length_10"
+                    android:background="@null"
+                    android:hint=""
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"
+                    android:imeOptions="actionSearch"
+                    android:nextFocusLeft="@+id/layout_search"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_24" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/action_search"
+                android:layout_width="@dimen/length_120"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/serarch_layout_search_button_margin_left_13"
+                android:background="@drawable/search_button_selector"
+                android:text="搜 索"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_24" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/length_48"
+            android:layout_marginTop="@dimen/serarch_layout_key_margin_top_47">
+
+            <TextView
+                android:id="@+id/search_result_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="历史搜索"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_24" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_contain_search_key"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/serarch_layout_contain_search_key_height_155"
+            android:layout_marginLeft="@dimen/length_48"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/no_search_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/search_no_key"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layout_key1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/key1"
+                    android:layout_width="@dimen/serarch_key_width_220"
+                    android:layout_height="@dimen/serarch_key_height_65"
+                    android:layout_marginTop="@dimen/serarch_key_margin_top_11"
+                    android:background="@drawable/search_key_selector"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:nextFocusLeft="@+id/layout_search"
+                    android:nextFocusUp="@+id/search_key"
+                    android:singleLine="true"
+                    android:text="key1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_24" />
+
+                <Button
+                    android:id="@+id/key2"
+                    android:layout_width="@dimen/serarch_key_width_220"
+                    android:layout_height="@dimen/serarch_key_height_65"
+                    android:layout_marginLeft="@dimen/length_20"
+                    android:layout_marginTop="@dimen/serarch_key_margin_top_11"
+                    android:background="@drawable/search_key_selector"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:nextFocusUp="@+id/search_key"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_24" />
+
+                <Button
+                    android:id="@+id/key3"
+                    android:layout_width="@dimen/serarch_key_width_220"
+                    android:layout_height="@dimen/serarch_key_height_65"
+                    android:layout_marginLeft="@dimen/length_20"
+                    android:layout_marginTop="@dimen/serarch_key_margin_top_11"
+                    android:background="@drawable/search_key_selector"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:nextFocusUp="@+id/search_key"
+                    android:singleLine="true"
+                    android:text="key3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_24" />
+
+                <Button
+                    android:id="@+id/key4"
+                    android:layout_width="@dimen/serarch_key_width_220"
+                    android:layout_height="@dimen/serarch_key_height_65"
+                    android:layout_marginLeft="@dimen/length_20"
+                    android:layout_marginTop="@dimen/serarch_key_margin_top_11"
+                    android:background="@drawable/search_key_selector"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:nextFocusRight="@+id/key4"
+                    android:nextFocusUp="@+id/search_key"
+                    android:singleLine="true"
+                    android:text="key4"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_key2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_key1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/key5"
+                    android:layout_width="@dimen/serarch_key_width_220"
+                    android:layout_height="@dimen/serarch_key_height_65"
+                    android:layout_marginTop="@dimen/serarch_key_margin_top_11"
+                    android:background="@drawable/search_key_selector"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:nextFocusLeft="@+id/layout_search"
+                    android:singleLine="true"
+                    android:text="key5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_24" />
+
+                <Button
+                    android:id="@+id/key6"
+                    android:layout_width="@dimen/serarch_key_width_220"
+                    android:layout_height="@dimen/serarch_key_height_65"
+                    android:layout_marginLeft="@dimen/length_20"
+                    android:layout_marginTop="@dimen/serarch_key_margin_top_11"
+                    android:background="@drawable/search_key_selector"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="key6"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_24" />
+
+                <Button
+                    android:id="@+id/key7"
+                    android:layout_width="@dimen/serarch_key_width_220"
+                    android:layout_height="@dimen/serarch_key_height_65"
+                    android:layout_marginLeft="@dimen/length_20"
+                    android:layout_marginTop="@dimen/serarch_key_margin_top_11"
+                    android:background="@drawable/search_key_selector"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="key7"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_24" />
+
+                <Button
+                    android:id="@+id/key8"
+                    android:layout_width="@dimen/serarch_key_width_220"
+                    android:layout_height="@dimen/serarch_key_height_65"
+                    android:layout_marginLeft="@dimen/length_20"
+                    android:layout_marginTop="@dimen/serarch_key_margin_top_11"
+                    android:background="@drawable/search_key_selector"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:nextFocusRight="@+id/key8"
+                    android:singleLine="true"
+                    android:text="key8"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_24" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_key_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_50"
+            android:layout_marginLeft="@dimen/length_48"
+            android:layout_marginTop="@dimen/length_20">
+
+            <TextView
+                android:id="@+id/search_result_tip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="热搜推荐"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

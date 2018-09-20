@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:domy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_vipdialog_bg"
+        android:layout_width="@dimen/gap_logistics_683"
+        android:layout_height="@dimen/height_225"
+        android:layout_centerInParent="true"
+        android:background="@drawable/view_dialog_warn_bg_zb"
+        android:clipChildren="false">
+
+        <TextView
+            android:id="@+id/tv_vipdialog_tips"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_commoditycategory_150"
+            android:layout_marginLeft="@dimen/gap_commoditycategory_233"
+            android:layout_marginRight="@dimen/radius"
+            android:gravity="center_vertical"
+            android:text="@string/player_loading_tip_zb"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_32"
+            domy:usertypeface="SIMHEI" />
+
+        <RelativeLayout
+            android:id="@+id/rl_vipdialog_positive_txt"
+            android:layout_width="@dimen/width_182"
+            android:layout_height="@dimen/height_104"
+            android:layout_marginLeft="@dimen/gap_226"
+            android:layout_marginTop="@dimen/width_aftersale_110"
+            android:background="@drawable/focused_view_selector_zb"
+            android:clipChildren="false"
+            android:focusable="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_go_setting"
+                android:layout_width="@dimen/loadingview_height_145"
+                android:layout_height="@dimen/ordermain_65"
+                android:background="@drawable/view_dialog_vip_btn_bg_pt"
+                android:gravity="center"
+                android:text="@string/setting_zb"
+                android:textColor="#88FFFFFF"
+                android:textSize="@dimen/sp_27" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_vipdialog_negative_txt"
+            android:layout_width="@dimen/width_182"
+            android:layout_height="@dimen/height_104"
+            android:layout_alignTop="@id/rl_vipdialog_positive_txt"
+            android:layout_marginLeft="@dimen/length_17"
+            android:layout_toRightOf="@id/rl_vipdialog_positive_txt"
+            android:background="@drawable/focused_view_selector_zb"
+            android:clipChildren="false"
+            android:focusable="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_exit"
+                android:layout_width="@dimen/loadingview_height_145"
+                android:layout_height="@dimen/ordermain_65"
+                android:background="@drawable/view_dialog_vip_btn_bg_pt"
+                android:gravity="center"
+                android:text="@string/player_error_ignore_zb"
+                android:textColor="#88FFFFFF"
+                android:textSize="@dimen/sp_27"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

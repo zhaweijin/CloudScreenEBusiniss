@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".home.APITestActivity"
+              android:background="#D3D3D3">
+
+    <Button
+        android:id="@+id/add_adresss"
+        android:layout_width="@dimen/width_addressmanager_800"
+        android:layout_height="@dimen/height_addressmanager_163"
+        android:layout_marginLeft="@dimen/gap_addressmanager_76"
+        android:layout_marginTop="@dimen/gap_addressmanager_73"
+        android:background="@drawable/address_selector"
+        android:drawableLeft="@drawable/jplus"
+        android:text="@string/add_address"
+        android:textColor="#3E3E3E"
+        android:textSize="@dimen/sp_43"
+        android:paddingLeft="@dimen/gap_addressmanager_67"
+        android:drawablePadding="@dimen/gap_addressmanager_57"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tv_recycler_view"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/gap_test_11" />
+
+
+        <TextView
+            android:layout_width="@dimen/commodityinfomation_300"
+            android:layout_height="@dimen/commodityinfomation_300"
+            android:layout_marginLeft="@dimen/length_50"
+            android:layout_marginTop="@dimen/length_50"
+            android:background="@drawable/commodity_item_focus_selected"
+            android:text="aabbbbb"
+            android:textAllCaps="false"
+            android:id="@+id/text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_20" />
+
+
+
+
+</FrameLayout>

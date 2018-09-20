@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+
+    <com.hiveview.dianshang.view.ObservableScrollView
+        android:id="@+id/scrollview"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/top_menu"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="right"
+                    android:id="@+id/layout_notification"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/width_commodityrd_495"
+                    android:layout_height="@dimen/length_80">
+                    <ImageView
+                        android:background="@drawable/notification_icon"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/length_110"
+                        android:layout_width="@dimen/length_20"
+                        android:layout_height="@dimen/length_22" />
+                    <com.hiveview.dianshang.view.TypeFaceTextView
+                        android:layout_marginLeft="@dimen/length_10"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/advertisement_message"
+                        android:layout_width="@dimen/width_commodityrd_420"
+                        android:layout_height="@dimen/gap"
+                        android:textSize="@dimen/sp_24"
+                        android:ellipsize="marquee"
+                        android:focusableInTouchMode="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:text="aaaaaaa"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </com.hiveview.dianshang.view.ObservableScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/promotion_commodity_head_layout_margin_left_10"
+        android:layout_height="@dimen/promotion_commodity_head_layout_height_80">
+
+        <TextView
+            android:id="@+id/promotion_type_name"
+            android:layout_width="@dimen/promotion_commodity_head_layout_height_80"
+            android:layout_height="@dimen/promotion_commodity_head_promotion_type_name_height_33"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/promotion_bg"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/promotion_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/promotion_commodity_head_promotion_type_height_12"
+            android:layout_toRightOf="@+id/promotion_type_name"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+/.idea/
+/build/
+.gradle/
+app/app.iml
+#crash.txt
+EBusinessApplication.iml
+local.properties
+SwitchInputManager/SwitchInputManager.iml
+UpgradeManager/UpgradeManager.iml

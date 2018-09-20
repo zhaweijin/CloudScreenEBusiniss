@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".home.APITestActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_jiesuan"
+        android:layout_width="@dimen/width_orderdetailsdialog_285"
+        android:layout_height="@dimen/height_orderdetailsdialog_61"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_apitestactivity_70"
+        android:background="@drawable/shopping_cart_button_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/gap"
+                android:layout_height="@dimen/gap"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/select_commodity_accounts" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/length_17"
+                android:layout_marginTop="@dimen/length_3"
+                android:text="确认并结算"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_24" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_clear_shopping_cart"
+        android:layout_width="@dimen/width_orderdetailsdialog_285"
+        android:layout_height="@dimen/height_orderdetailsdialog_61"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/width_addressmanager_23"
+        android:background="@drawable/shopping_cart_button_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/gap"
+                android:layout_height="@dimen/gap"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shopping_cart_delete" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/length_17"
+                android:layout_marginTop="@dimen/length_3"
+                android:text="清空购物车"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_24" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

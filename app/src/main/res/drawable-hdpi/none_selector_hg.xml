@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--这是一个空的selector，用于处理电影列表热词部分的变态焦点逻辑-->
+</selector>

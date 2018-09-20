@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/layout_left_grobal"
+        android:layout_alignParentLeft="true"
+        android:layout_width="@dimen/acution_recycleview_width"
+        android:layout_marginLeft="@dimen/acution_recycleview_margin_left"
+        android:layout_height="wrap_content">
+
+        <com.hiveview.dianshang.view.HiveRecyclerView
+            android:id="@+id/tv_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/length_30" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layout_tips"
+        layout="@layout/layout_null_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></include>
+
+    <ImageView
+        android:background="@drawable/acution_item_info_selected"
+        android:layout_toRightOf="@+id/layout_left_grobal"
+        android:layout_marginLeft="@dimen/acution_main_info_margin_left"
+        android:layout_width="@dimen/acution_infomation_progress_height"
+        android:visibility="invisible"
+        android:id="@+id/layout_left_focus"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/layout_left_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_right_global"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:clipChildren="false">
+
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/acution_main_info_margin_top">
+
+            <LinearLayout
+                android:id="@+id/layout_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/length_20"
+                android:layout_marginRight="@dimen/acution_main_info_margin_right"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_right_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/length_50"
+                    android:visibility="invisible"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/length_10">
+
+                    <TextView
+                        android:id="@+id/tips11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/length_50"
+                        android:layout_toLeftOf="@+id/tips22"
+                        android:singleLine="true"
+                        android:text="@string/tips1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_20" />
+
+                    <ImageView
+                        android:id="@+id/tips22"
+                        android:layout_width="@dimen/acution_main_info_image_wh"
+                        android:layout_height="@dimen/acution_main_info_image_wh"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/length_5"
+                        android:layout_toLeftOf="@+id/tip33"
+                        android:background="@drawable/tip_ok" />
+
+                    <TextView
+                        android:id="@+id/tip33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:text="@string/tips33"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_20" />
+                </RelativeLayout>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/top_description_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/length_200"
+                    android:background="@android:color/transparent"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:placeholderImageScaleType="centerCrop" />
+
+                <include layout="@layout/layout_acution_info_description"></include>
+
+                <LinearLayout
+                    android:id="@+id/layout_description_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

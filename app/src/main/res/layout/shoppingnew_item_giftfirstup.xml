@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="867dp"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3">
+<!--该布局没有用到-->
+    <LinearLayout
+        android:id="@+id/layout_way"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/wayname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/frame"
+            android:text="@string/losemoney"
+            android:textSize="20sp"
+            android:textColor="#3b3b3b"/>
+        <TextView
+            android:id="@+id/waycontent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:textColor="#3b3b3b"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        <Button
+            android:id="@+id/btn_gather"
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:text="@string/gather"
+            android:background="@drawable/menubutton_focus"
+            android:textColor="@drawable/textcolor"
+            android:textSize="20sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"></LinearLayout>
+
+    <!--商品展示一栏-->
+    <include
+        layout="@layout/shoppingnew_layout_itemview"
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_marginTop="10dp"></include>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"></LinearLayout>
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b8b8b8"/>
+
+
+</LinearLayout>

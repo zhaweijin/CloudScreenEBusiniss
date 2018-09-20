@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/length_7">
+    <LinearLayout
+        android:id="@+id/bar1"
+        android:layout_width="@dimen/imgw_commodityinfo_245"
+        android:layout_height="@dimen/length_13"
+        android:orientation="horizontal"
+        android:background="#b8b8b8"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/length_46">
+    </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/reach1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/unreach"
+            android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:id="@+id/bar2"
+        android:layout_width="@dimen/width_logistics_309"
+        android:layout_height="@dimen/length_13"
+        android:orientation="horizontal"
+        android:background="#b8b8b8"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/width_categorymainitemview_329">
+    </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/reach2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/unreach"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/reach1"
+            android:layout_marginStart="@dimen/width_commoditycategory_240" />
+    <LinearLayout
+        android:id="@+id/bar3"
+        android:layout_width="@dimen/width_logistics_247"
+        android:layout_height="@dimen/length_13"
+        android:orientation="horizontal"
+        android:background="#b8b8b8"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/gap_logistics_683">
+    </LinearLayout>
+
+     <ImageView
+          android:id="@+id/reach3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:src="@drawable/unreach"
+         android:layout_alignParentTop="true"
+         android:layout_toEndOf="@+id/reach2"
+         android:layout_marginStart="@dimen/gap_logistics_303" />
+
+    <ImageView
+        android:id="@+id/reach4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unreach"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/reach2"
+        android:layout_marginStart="@dimen/gap_logistics_590" />
+
+
+</RelativeLayout>

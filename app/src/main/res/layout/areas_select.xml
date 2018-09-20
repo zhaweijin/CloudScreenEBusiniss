@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".home.HomeActivity"
+    android:background="#D3D3D3">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/length_20"
+        android:layout_marginBottom="@dimen/length_20"
+        android:background="#D3D3D3">
+        <com.hiveview.dianshang.view.MemListView
+            android:id="@+id/provinceList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:divider="#D3D3D3">
+        </com.hiveview.dianshang.view.MemListView>
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/cityListLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/length_20"
+        android:layout_marginBottom="@dimen/length_20"
+        android:background="#D3D3D3">
+
+        <com.hiveview.dianshang.view.MemListView
+            android:id="@+id/cityList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:divider="#D3D3D3">
+
+        </com.hiveview.dianshang.view.MemListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/countyListLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/length_20"
+        android:layout_marginBottom="@dimen/length_20"
+        android:background="#D3D3D3">
+
+        <com.hiveview.dianshang.view.MemListView
+            android:id="@+id/countyList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:divider="#D3D3D3">
+
+        </com.hiveview.dianshang.view.MemListView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

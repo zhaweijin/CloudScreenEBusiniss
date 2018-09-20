@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="867dp"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3">
+    <!--商品展示一栏-->
+    <include
+        layout="@layout/shoppingnew_layout_itemview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_shopping_167"></include>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/gap_shopping_7"></LinearLayout>
+    <TextView
+        android:id="@+id/divide_line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_shopping_1"
+        android:layout_marginBottom="@dimen/gap_shopping_10"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_shopping_3"
+        android:background="#787878"
+        android:layout_marginTop="@dimen/gap_shopping_6"
+        android:layout_marginBottom="@dimen/gap_shopping_6"/>
+    <TextView
+        android:id="@+id/divide_line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_shopping_1"
+        android:layout_marginTop="@dimen/gap_shopping_10"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

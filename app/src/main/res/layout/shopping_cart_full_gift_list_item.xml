@@ -1,0 +1,29 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+    <TextView
+        android:id="@+id/full_gift_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_marginRight="@dimen/length_20"
+        android:text="促销赠品:"
+        android:visibility="gone"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/sp_16" />
+
+    <LinearLayout
+        android:id="@+id/layout_full_gift"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_100"
+        android:background="@drawable/focused_view_selector"
+        android:focusable="true"
+        android:touchscreenBlocksFocus="true">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/commodity_icon"
+            android:layout_width="@dimen/sku_commodity_icon_wh_67"
+            android:layout_height="@dimen/sku_commodity_icon_wh_67"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_10"
+            android:background="@drawable/commodity_small_icon"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImageScaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/invalid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_20"
+            android:text="@string/invalid"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/sp_16" />
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/length_20"
+            android:layout_marginTop="@dimen/sku_commodity_item_expand_margin_top_13"
+            android:layout_toRightOf="@+id/commodity_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/commodity_name"
+                android:layout_width="@dimen/length_400"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="aa"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/sp_16" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/length_20"
+                android:orientation="horizontal">
+                <!--"RMB"修改为"￥"-->
+                <TextView
+                    android:id="@+id/price_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/sp_24" />
+
+                <TextView
+                    android:id="@+id/commodity_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/sp_24" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_top"
+            android:layout_marginLeft="@dimen/length_20"
+            android:layout_marginTop="@dimen/length_15"
+            android:layout_toRightOf="@+id/commodity_icon">
+
+            <TextView
+                android:id="@+id/commodity_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/shoppingcart_item_type_margin_right_90"
+                android:singleLine="true"
+                android:text="XL"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:id="@+id/commodity_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/length_20"
+                android:text="商品数量:3"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/test_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/length_10"
+            android:layout_marginRight="@dimen/length_20"
+            android:text="" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

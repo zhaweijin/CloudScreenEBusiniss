@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_cancel_dialog_height_400"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/addresspop">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/gap_paymentexit_124"
+            android:gravity="center"
+            android:text="@string/exit_payment_message"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_32" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_addressmanager_67"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="@dimen/length_110"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/payment"
+                android:layout_width="@dimen/qr_width_267"
+                android:layout_height="@dimen/gap_addressmanager_67"
+                android:background="@drawable/button_selector"
+                android:text="@string/continue_payment"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_24"></Button>
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="@dimen/qr_width_267"
+                android:layout_height="@dimen/gap_addressmanager_67"
+                android:layout_marginLeft="@dimen/gap_addressmanager_67"
+                android:background="@drawable/button_selector"
+                android:text="@string/confirm_exit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_24"></Button>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

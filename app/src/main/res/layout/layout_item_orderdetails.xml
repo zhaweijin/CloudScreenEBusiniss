@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_orderdetail_20"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipToPadding="false"
+        android:divider="#b8b8b8"
+        android:dividerHeight="@dimen/divide_orderdetail_1"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:focusable="true"
+        android:scrollbars="none"
+        android:transcriptMode="normal"></ListView>-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_toLeftOf="@+id/layout_vertial_div"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/length_80"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:layout_marginRight="@dimen/shoppingcart_list_listview_margin_right_23"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:focusable="true"
+        android:transcriptMode="normal"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

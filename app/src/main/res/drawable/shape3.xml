@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="rectangle">
+    <!--  边缘线 -->
+    <stroke android:color="#5999"
+        android:width="@dimen/length_1"/>
+    
+     <!--    整体的颜色 -->
+    <solid android:color="#ffffff"/>
+    
+     <!--   各边的间距 -->
+    <padding android:bottom="@dimen/radius"
+        android:top="@dimen/radius"
+        android:left="@dimen/radius"
+        android:right="@dimen/radius"/>
+    
+
+</shape>

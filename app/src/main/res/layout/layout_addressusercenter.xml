@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".home.HomeActivity"
+              android:background="#D3D3D3">
+    <com.hiveview.dianshang.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/length_80"
+        android:background="#D3D3D3"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_addressmanager_73"
+            android:background="#D3D3D3"></LinearLayout>
+
+    <ListView
+        android:id="@+id/addresslv"
+        android:descendantFocusability="afterDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/length_20"
+        android:scrollbars="none"></ListView>
+
+    <Button
+        android:id="@+id/add_address"
+        android:layout_width="@dimen/width_addressmanager_800"
+        android:layout_height="@dimen/height_addressmanager_163"
+        android:layout_marginTop="@dimen/length_20"
+        android:background="@drawable/address_selector"
+        android:drawableLeft="@drawable/jplus"
+        android:text="@string/add_address"
+        android:textColor="#3E3E3E"
+        android:textSize="@dimen/sp_43"
+        android:paddingLeft="@dimen/gap_addressmanager_67"
+        android:drawablePadding="@dimen/gap_addressmanager_57"
+        android:layout_marginBottom="@dimen/gap_addressmanager_67"/>
+
+    </LinearLayout>
+
+    </com.hiveview.dianshang.view.MyScrollView>
+
+</LinearLayout>

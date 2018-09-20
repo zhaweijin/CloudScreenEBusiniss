@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/orderflag"
+        android:layout_width="@dimen/length_20"
+        android:layout_height="@dimen/length_27"
+        android:layout_marginLeft="@dimen/length_17"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/gap_aftersale_16"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017/5/3"
+            android:textSize="@dimen/sp_16"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/specificTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:33:54"
+            android:textSize="@dimen/sp_16"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/gap_aftersale_49">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ordernum"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/orderNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DJ11010819881021XXXX"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

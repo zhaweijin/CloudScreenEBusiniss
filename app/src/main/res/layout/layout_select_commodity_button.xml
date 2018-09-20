@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".home.APITestActivity">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/layout_jiesuan"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/select_commodity_number_view_selector"
+            android:layout_width="@dimen/imgw_commodityinfo_313"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:background="@drawable/select_commodity_accounts"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/length_10"
+                    android:id="@+id/direct_buy_icon"
+                    android:layout_width="@dimen/gap"
+                    android:layout_height="@dimen/gap" />
+                <TextView
+                    android:text="立即购买"
+                    android:textSize="@dimen/sp_24"
+                    android:id="@+id/direct_buy_text"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/length_17"
+                    android:layout_marginTop="@dimen/length_3"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_shopping_cart"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:layout_marginLeft="@dimen/gap"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/select_commodity_number_view_selector"
+            android:layout_width="@dimen/imgw_commodityinfo_313"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            <ImageView
+                android:background="@drawable/select_commodity_type_shopping_cart_icon"
+                android:layout_marginLeft="@dimen/length_10"
+                android:id="@+id/add_to_shopping_cart_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/gap"
+                android:layout_height="@dimen/gap" />
+            <TextView
+                android:text="加入购物车"
+                android:textSize="@dimen/sp_24"
+                android:id="@+id/add_to_shopping_cart_text"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/length_17"
+                android:layout_marginTop="@dimen/length_3"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

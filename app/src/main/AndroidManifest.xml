@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    package="com.hiveview.dianshang">
+    <!--android:sharedUserId="android.uid.system"-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+
+
+    <application
+        android:name="com.hiveview.dianshang.base.EBusinessApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name="com.hiveview.dianshang.home.Welcome"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hiveview.dianshang.saleservice.AfterSaleServiceMain"></activity>
+        <activity android:name="com.hiveview.dianshang.showcommodity.CommodityInfomation">
+            <intent-filter>
+                <action android:name="com.hiveview.dianshang.action.COMMODITYINFO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hiveview.dianshang.showcommodity.PromotionInformation"></activity>
+        <activity android:name="com.hiveview.dianshang.home.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="com.hiveview.dianshang.action.HOME" />
+                <action android:name="com.hiveview.dianshang.action.acution" />
+                <action android:name="com.hiveview.dianshang.action.order" />
+                <action android:name="com.hiveview.dianshang.action.favorite" />
+                <action android:name="com.hiveview.dianshang.action.user.center" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hiveview.dianshang.home.APITestActivity"></activity>
+        <activity android:name="com.hiveview.dianshang.showcommodity.CommodityCategory"></activity>
+        <activity android:name="com.hiveview.dianshang.shoppingcart.ShoppingCartGrid"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.hiveview.dianshang.action.SHOPPINGCART" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hiveview.dianshang.home.Test"></activity>
+        <activity android:name="com.hiveview.dianshang.usercenter.UserAdderssSelect"></activity>
+        <activity android:name="com.hiveview.dianshang.usercenter.EditAddressActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <activity android:name="com.hiveview.dianshang.home.PaymentPage"></activity>
+        <activity android:name="com.hiveview.dianshang.home.PaymentSucessUI"></activity>
+        <activity android:name="com.hiveview.dianshang.home.LivePlay"></activity>
+        <service android:name="com.hiveview.dianshang.home.InstallService"></service>
+        <service android:name="com.hiveview.dianshang.home.YunPushService"></service>
+        <activity android:name="com.hiveview.dianshang.shoppingcart.ShoppingCartList"></activity>
+        <activity android:name=".showcommodity.CommoditySpecial">
+            <intent-filter>
+                <action android:name="com.hiveview.dianshang.action.COMMODITYSPECIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".showcommodity.PromotionCommodity"></activity>
+        <activity android:name=".auction.AcutionInfomation"></activity>
+        <service  android:name=".auction.AcutionService"></service>
+        <receiver android:name=".auction.UnpayReceiver">
+            <intent-filter>
+                <action android:name="com.hiveview.dianshang.NETTY"></action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

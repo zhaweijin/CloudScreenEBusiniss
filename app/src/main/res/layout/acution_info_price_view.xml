@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/length_70"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/length_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/money_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/length_8"
+            android:layout_toLeftOf="@+id/acution_price"
+            android:text="¥"
+            android:textColor="#C90000"
+            android:textSize="@dimen/sp_27" />
+
+        <TextView
+            android:id="@+id/acution_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="#C90000"
+            android:textSize="@dimen/sp_53" />
+    </RelativeLayout>
+
+
+</LinearLayout>

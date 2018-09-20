@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/typename"
+        android:layout_width="@dimen/width_orderdetail_60"
+        android:layout_height="wrap_content"
+        android:text="@string/giveway"
+        android:textSize="@dimen/sp_20"
+        android:textColor="#3b3b3b"/>
+    <TextView
+        android:id="@+id/giveawayname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_20"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#3b3b3b"/>
+    <TextView
+        android:id="@+id/giveawaycount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_20"
+        android:textColor="#3b3b3b"/>
+</LinearLayout>

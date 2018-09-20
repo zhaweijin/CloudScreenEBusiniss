@@ -1,0 +1,45 @@
+<com.hiveview.dianshang.view.TypeFocusRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_color_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.APITestActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_color"
+        android:layout_width="@dimen/selectcommoditytype_190"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <com.hiveview.dianshang.view.CircleImageView
+                android:id="@+id/item_color"
+                android:layout_width="@dimen/gap_commodity_30"
+                android:layout_height="@dimen/gap_commodity_30"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/item_type_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="@dimen/selectcommoditytype_145"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/length_15"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:text="商品类型"
+                android:gravity="left|center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_27" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.hiveview.dianshang.view.TypeFocusRelativeLayout>

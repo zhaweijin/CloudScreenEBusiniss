@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="867dp"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3">
+<!--该布局没有用到-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/invalidcommodity"
+            android:textSize="24sp"
+            android:textColor="#3b3b3b"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        <Button
+            android:id="@+id/clear_invalid"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:text="@string/clearinvalid"
+            android:background="@drawable/menubutton_focus"
+            android:textColor="@drawable/textcolor"
+            android:textSize="20sp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b8b8b8"
+        android:layout_marginTop="10dp" />
+    <!--商品展示一栏-->
+    <include
+        layout="@layout/shoppingnew_layout_itemview"
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"></include>
+
+
+
+</LinearLayout>

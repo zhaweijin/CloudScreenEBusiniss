@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    tools:context=".home.APITestActivity">
+
+
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></Gallery>
+
+    <ImageView
+        android:id="@+id/warning_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/acution_info_bg"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/arrow_left"
+        android:layout_width="@dimen/length_33"
+        android:layout_height="@dimen/imgh_commodityinfo_57"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/length_27"
+        android:background="@drawable/commodity_information_arrow_left" />
+
+
+    <ImageView
+        android:id="@+id/arrow_right"
+        android:layout_width="@dimen/length_33"
+        android:layout_height="@dimen/imgh_commodityinfo_57"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/length_27"
+        android:background="@drawable/commodity_information_arrow_right" />
+
+    <RelativeLayout
+        android:id="@+id/layout_tips"
+        android:layout_width="@dimen/acution_infomation_tips_width"
+        android:layout_height="@dimen/length_80"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/length_60"
+        android:background="@drawable/commodity_info_telephone_bg">
+
+        <TextView
+            android:id="@+id/tips1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_50"
+            android:singleLine="true"
+            android:text="@string/tips1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+
+        <ImageView
+            android:id="@+id/tips2"
+            android:layout_width="@dimen/acution_main_info_image_wh"
+            android:layout_height="@dimen/acution_main_info_image_wh"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_toRightOf="@+id/tips1"
+            android:background="@drawable/acution_ok_infomation" />
+
+        <TextView
+            android:id="@+id/tx_top_right_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tips2"
+            android:singleLine="true"
+            android:text="@string/tips3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_acution"
+        android:layout_width="@dimen/acution_infomation_layout_status_width"
+        android:layout_height="@dimen/acution_infomation_layout_status_heigth"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:layout_marginBottom="@dimen/acution_dialog_layout_button_margin_bottm_73"
+        android:background="@drawable/acution_info_add_price_bg">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_status"
+            android:layout_width="@dimen/acution_infomation_layout_status2_wh"
+            android:layout_height="@dimen/acution_infomation_layout_status2_wh"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/length_8"
+            android:layout_toLeftOf="@+id/layout_right">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_48" />
+
+            <TextView
+                android:id="@+id/second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/length_50"
+                android:layout_toRightOf="@+id/time"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_24" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/length_33"
+            android:layout_marginTop="@dimen/length_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_right_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/length_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/acution_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="当前竞拍价"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/acution_title_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=" "
+                    android:textColor="#D0021B"
+                    android:textSize="@dimen/sp_20" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_right_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/layout_right_title"
+                android:layout_marginTop="@dimen/length_1"
+                android:orientation="horizontal">
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/acution_infomation_progress_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/length_20"
+        android:layout_marginLeft="@dimen/acution_infomation_progress_height"
+        android:layout_marginRight="@dimen/acution_infomation_progress_height"
+        android:max="100"
+        android:progress="40"
+        android:visibility="gone" />
+
+</RelativeLayout>

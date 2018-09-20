@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/commodity_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_ordermain_109"
+        android:background="@drawable/focused_view_selector">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/commodity_icon"
+            android:layout_width="@dimen/gap_addressmanager_67"
+            android:layout_height="@dimen/gap_addressmanager_67"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_20"
+            android:background="@drawable/commodity_small_icon"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImageScaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/invalid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/half_white"
+            android:text="@string/invalid"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/gap_collectionmain_28"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_commoditycategory_9"
+            android:layout_marginTop="@dimen/gap_afterdetail_12"
+            android:layout_toRightOf="@+id/commodity_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/commodity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/length_38"
+                android:textColor="@android:color/white"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="@dimen/sp_16" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/commodity_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_16" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/commodity_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/length_8"
+            android:orientation="horizontal">
+			<!--RMB换￥-->
+            <TextView
+                android:id="@+id/price_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_24" />
+            <TextView
+                android:id="@+id/commodity_price"
+                android:layout_marginRight="@dimen/gap_afterdetail_37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_24" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

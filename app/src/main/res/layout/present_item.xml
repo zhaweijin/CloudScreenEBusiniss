@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/commodity_item"
+              android:background="#D3D3D3">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/promotion_information_dp_13.33"
+        android:layout_marginBottom="@dimen/promotion_information_dp_13.33"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/promotion_information_dp_80">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/present_icon"
+            android:layout_width="@dimen/promotion_information_dp_120"
+            android:layout_height="@dimen/promotion_information_dp_80"
+            android:layout_centerVertical="true"
+            android:background="@drawable/commodity_small_icon"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/promotion_information_dp_24"
+            android:layout_marginTop="@dimen/promotion_information_dp_22"
+            android:id="@+id/layout_top"
+            android:layout_toRightOf="@+id/present_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/present_name"
+                android:layout_width="@dimen/promotion_information_dp_700"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/sp_27"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/yougou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/layout_top"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/promotion_information_dp_0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优购价"
+                android:textSize="@dimen/sp_27"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/present_num"
+        android:layout_marginLeft="@dimen/promotion_information_dp_400"
+        android:layout_marginTop="@dimen/promotion_information_dp_10"
+        android:layout_below="@+id/yougou"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/present_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/num"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/multiply"-->
+            <!--android:text=""-->
+            <!--android:textSize="@dimen/sp_27"-->
+            <!--android:textColor="@color/black" />-->
+    </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/gift_price"
+            android:layout_marginLeft="@dimen/promotion_information_dp_680"
+            android:layout_marginTop="@dimen/promotion_information_dp_10"
+            android:layout_below="@+id/yougou"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/present_icon"
+            android:layout_marginRight="@dimen/promotion_information_dp_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textSize="@dimen/sp_27"
+                android:textColor="@color/black" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/price"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@+id/mmark"-->
+                <!--android:text=""-->
+                <!--android:textSize="@dimen/sp_27"-->
+                <!--android:textColor="@color/black" />-->
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

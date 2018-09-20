@@ -1,0 +1,330 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#D3D3D3"
+    tools:context=".home.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="@dimen/width_payorderdetail_653"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/gap_payorderdetail_53"
+        android:layout_marginRight="@dimen/gap_payorderdetail_27"
+        android:layout_marginLeft="@dimen/gap_payorderdetail_80">
+
+        <TextView
+            android:id="@+id/orderNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#3b3b3b"
+            android:textSize="@dimen/sp_24"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/gap_payorderdetail_20"
+            android:layout_toLeftOf="@+id/layout_vertial_div"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:scrollbars="none"
+            android:transcriptMode="normal"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:background="#b8b8b8"
+        android:layout_width="@dimen/width_payorderdetail_5"
+        android:layout_marginTop="@dimen/gap_payorderdetail_53"
+        android:layout_height="@dimen/height_payorderdetail_573" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/gap_payorderdetail_27"
+        android:layout_marginTop="@dimen/gap_payorderdetail_53"
+        android:layout_marginRight="@dimen/gap_payorderdetail_113"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--送货信息和状态-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_payorderdetail_33"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sendgoodtip"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/sp_24"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#D0021B"
+                android:textSize="@dimen/sp_24"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <!--名字和电话-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_payorderdetail_27"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="@dimen/width_payorderdetail_75"
+                android:layout_height="wrap_content"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/sp_20"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_payorderdetail_8"
+                android:layout_weight="1"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3b3b3b"
+            android:textSize="@dimen/sp_20"
+            android:lines="2"
+            android:ellipsize="end"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_payorderdetail_1"
+            android:layout_marginBottom="@dimen/gap_payorderdetail_7"
+            android:layout_marginTop="@dimen/gap_payorderdetail_7"
+            android:background="#b8b8b8"></LinearLayout>
+
+        <!--商品总价-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_payorderdetail_33"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/commodityprice"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/sp_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/commodityprice"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/sp_24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"/>
+        </LinearLayout>
+        <!--优惠价格-->
+        <LinearLayout
+            android:id="@+id/layout_discount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_payorderdetail_33"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/discount"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/sp_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/discountprice"
+                android:textColor="#ff3b00"
+                android:textSize="@dimen/sp_24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"/>
+        </LinearLayout>
+        <!--数量-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_payorderdetail_33"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/countun"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/sp_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/count"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/sp_24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"/>
+        </LinearLayout>
+        <!--运费-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_payorderdetail_33"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/freight"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/sp_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/carriage"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/sp_24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_payorderdetail_1"
+            android:layout_marginBottom="@dimen/gap_payorderdetail_7"
+            android:layout_marginTop="@dimen/gap_payorderdetail_7"
+            android:background="#b8b8b8"></LinearLayout>
+        <!-- 订单总价-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_payorderdetail_47"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/orderprice"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/sp_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/orderprice"
+                android:textColor="#ff3b00"
+                android:textSize="@dimen/sp_40"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"/>
+        </LinearLayout>
+        <!--功能键按钮-->
+        <LinearLayout
+            android:id="@+id/layout_logistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/gap_otherorderdetail_20">
+            <Button
+                android:id="@+id/logistics"
+                android:layout_width="@dimen/width_otherorderdetail_287"
+                android:layout_height="@dimen/height_otherorderdetail_53"
+                android:background="@drawable/menubutton_focus"
+                android:text="@string/logistics"
+                android:textSize="@dimen/sp_24"
+                android:textColor="@drawable/textcolor"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!--物流显示-->
+        <LinearLayout
+            android:id="@+id/layout_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/gap_otherorderdetail_20">
+
+            <LinearLayout
+                android:id="@+id/layout_invoicetitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/invoicetitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3b3b3b"
+                    android:textSize="@dimen/sp_20"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_taxno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/gap_otherorderdetail_3">
+                <TextView
+                    android:id="@+id/taxno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3b3b3b"
+                    android:textSize="@dimen/sp_20"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_invoicecontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/gap_otherorderdetail_3">
+                <TextView
+                    android:id="@+id/invoicecontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3b3b3b"
+                    android:textSize="@dimen/sp_20"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

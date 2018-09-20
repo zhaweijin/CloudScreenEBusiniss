@@ -1,0 +1,148 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".home.HomeActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/select_commodity_item_information"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/select_commodity_item_information_height_230"
+                android:layout_alignParentTop="true"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/length_10"
+                android:layout_marginLeft="@dimen/select_comodity_div_margin_left_53"
+                android:layout_marginRight="@dimen/length_80"
+                android:layout_marginTop="@dimen/length_20"
+                android:background="#33000000"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_contain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/select_comodity_layout_contain_margint_top_7"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/select_comodity_div_margin_left_53"
+                android:layout_marginRight="@dimen/length_80"
+                android:layout_marginTop="@dimen/length_20"
+                android:background="#33000000"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/layout_shopping"
+                    android:visibility="invisible"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_select_commodity_number"
+                        android:layout_width="@dimen/select_comodity_number_width_667"
+                        android:layout_height="@dimen/select_comodity_number_height_89"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/length_20"
+                        android:background="@drawable/select_commodity_number_view_selector"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/length_60"
+                            android:layout_centerInParent="true">
+
+                            <TextView
+                                android:id="@+id/title_commodity_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="购买数量"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/sp_24" />
+
+                            <RelativeLayout
+                                android:layout_width="@dimen/select_comodity_number_layout_width_208"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/select_comodity_number_layout_margin_left_63">
+
+                                <ImageView
+                                    android:id="@+id/arrow_left"
+                                    android:layout_width="@dimen/select_comodity_arrow_width_21"
+                                    android:layout_height="@dimen/select_comodity_arrow_height_27"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/select_comodity_arrow_margin_left_15"
+                                    android:background="@drawable/reduce_commodity" />
+
+                                <TextView
+                                    android:id="@+id/commodity_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="0dp"
+                                    android:text="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/sp_43" />
+
+                                <ImageView
+                                    android:id="@+id/arrow_right"
+                                    android:layout_width="@dimen/select_comodity_arrow_width_21"
+                                    android:layout_height="@dimen/select_comodity_arrow_height_27"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/select_comodity_arrow_margin_left_15"
+                                    android:background="@drawable/add_commodity" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_select_commodity_contain"
+                        android:layout_width="@dimen/select_comodity_number_width_667"
+                        android:layout_height="@dimen/select_comodity_number_height_89"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/length_100"
+                        android:layout_marginTop="@dimen/length_20"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/homebuy_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/length_48"
+                    android:text="您已达到购买上限,请选择其他商品"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_24"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

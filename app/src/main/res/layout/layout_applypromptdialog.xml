@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#D3D3D3">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_62"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/gap_applypromptd_227"/>
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_43"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/gap_commoditycategory_25"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/length_53"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_aftersaledialog_72"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:textSize="@dimen/sp_24"
+            android:textColor="@color/white"
+            android:background="@drawable/applybackgroud"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

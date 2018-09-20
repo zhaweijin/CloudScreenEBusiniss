@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/width_shopping_867"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3">
+
+    <LinearLayout
+        android:id="@+id/layout_way"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_shopping_40"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/gap_shopping_5">
+        <TextView
+            android:id="@+id/wayname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/frame"
+            android:text="@string/losemoney"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#3b3b3b"/>
+        <TextView
+            android:id="@+id/waycontent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/gap_shopping_15"
+            android:text="TextView"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#3b3b3b"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        <Button
+            android:id="@+id/btn_gather"
+            android:layout_width="@dimen/width_shopping_126"
+            android:layout_height="match_parent"
+            android:text="@string/gather"
+            android:background="@drawable/menubutton_focus"
+            android:textColor="@drawable/textcolor"
+            android:textSize="@dimen/sp_20"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/gap_shopping_10"></LinearLayout>
+
+    </LinearLayout>

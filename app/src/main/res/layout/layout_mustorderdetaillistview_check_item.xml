@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/commodity_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.HomeActivity"
+    android:background="@drawable/focused_view_selector">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_mustorderdetail_120">
+        <ImageView
+            android:id="@+id/first_line"
+            android:background="#b8b8b8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_mustorderdetail_1" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/gap_mustorderdetail_7"
+            android:layout_marginTop="@dimen/gap_mustorderdetail_7">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/commodity_icon"
+                android:layout_width="@dimen/width_mustorderdetail_67"
+                android:layout_height="@dimen/height_mustorderdetail_67"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/gap_mustorderdetail_20"
+                android:background="@drawable/commodity_small_icon"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImageScaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_mustorderdetail_67"
+                android:layout_marginLeft="@dimen/gap_mustorderdetail_9"
+                android:layout_marginTop="@dimen/gap_mustorderdetail_20"
+                android:layout_toRightOf="@+id/commodity_icon"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout7">
+
+                <TextView
+                    android:id="@+id/commodity_name"
+                    android:layout_width="@dimen/width_mustorderdetail_400"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_24"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/gap_mustorderdetail_16">
+
+                    <TextView
+                        android:id="@+id/commodity_type"
+                        android:layout_width="@dimen/width_mustorderdetail_400"
+                        android:layout_height="wrap_content"
+                        android:text="XL"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/gap_mustorderdetail_8"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout5">
+                <!--RMB换￥-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/commodity_icon"
+                android:layout_marginRight="@dimen/gap_mustorderdetail_20"
+                android:layout_toStartOf="@+id/linearLayout5"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/price_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_24" />
+                <TextView
+                    android:id="@+id/commodity_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="233"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_24" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/commodity_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品数量:3"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16"
+                android:layout_alignBottom="@+id/commodity_icon"
+                android:layout_alignEnd="@+id/lss"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/gap_mustorderdetail_20"
+        android:layout_marginLeft="@dimen/gap_mustorderdetail_20"
+        android:layout_marginBottom="@dimen/gap_mustorderdetail_7"></LinearLayout>
+
+</LinearLayout>

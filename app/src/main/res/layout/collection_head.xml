@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/imgh_commodityinfo_80">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_collectionmain_35"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:id="@+id/layout_normal_mode"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/gap_collectionmain_28">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="按 \“菜单 "
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_24" />
+
+            <TextView
+                android:layout_width="@dimen/length_22"
+                android:layout_height="@dimen/height_collectionmain_18"
+                android:layout_marginTop="@dimen/length_10"
+                android:background="@drawable/collection_menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=" \” 进入编辑模式，可删除收藏"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_24" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/all_delete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/all_delete_margin_left_10"
+            android:text="全部删除"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangle_button_selector"
+            android:layout_width="@dimen/all_delete_width_167"
+            android:layout_height="@dimen/all_delete_height_40" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_collectionmain_35"
+            android:orientation="horizontal"
+            android:id="@+id/layout_edit_mode"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/gap_collectionmain_28">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="按 \“返回 "
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_24" />
+
+            <TextView
+                android:layout_width="@dimen/length_26"
+                android:layout_height="@dimen/gap_allcommodity_21"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/collection_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" \” 或 \“ 菜单 "
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_24" />
+
+            <TextView
+                android:layout_width="@dimen/length_22"
+                android:layout_height="@dimen/height_collectionmain_18"
+                android:layout_marginTop="@dimen/length_10"
+                android:background="@drawable/collection_menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" \” 退出编辑模式"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_24" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

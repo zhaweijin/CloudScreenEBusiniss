@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#D3D3D3">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_addressmanager_260"
+        android:layout_marginLeft="@dimen/length_10"
+        android:layout_marginRight="@dimen/length_10"
+        android:layout_marginTop="@dimen/length_110"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_logistics_143"
+            android:text="@string/myorder"
+            android:textColor="#3B3B3B"
+            android:textSize="@dimen/sp_43"
+            android:textStyle="bold"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/gap_logistics_143"
+    android:layout_marginTop="@dimen/gap_logistics_19"
+    android:layout_marginBottom="@dimen/length_20"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/invoice"
+        android:textColor="#3B3B3B"
+        android:textSize="@dimen/sp_24"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/invoiceNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_20"
+        android:textColor="#3B3B3B"
+        android:textSize="@dimen/sp_24"
+        android:textStyle="bold"/>
+
+</LinearLayout>
+
+        <!--进度条一栏-->
+        <include
+            layout="@layout/layout_itemprogressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_logistics_143"></include>
+        <!-- 进度条提示语一栏-->
+        <include
+            layout="@layout/layout_itemprogresstip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_logistics_125"></include>
+        <!-- 进度条提示时间一栏-->
+        <include
+            layout="@layout/layout_itemprogresstiptime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height_mainactivity_90"></include>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/horizontalline"
+        android:layout_marginTop="@dimen/gap_commoditycategory_25"
+        android:layout_marginBottom="@dimen/length_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_logistics_210"
+        android:layout_marginTop="@dimen/length_20"
+        android:layout_marginBottom="@dimen/length_20">
+
+        <ListView
+            android:id="@+id/listView_logistics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#212121"
+            android:scrollbars="none"></ListView>
+    </LinearLayout>
+
+
+</LinearLayout>

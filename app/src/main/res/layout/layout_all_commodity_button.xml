@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/all_commodity"
+    android:nextFocusRight="@+id/all_commodity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:nextFocusLeft="@id/layout_home"
+    tools:context=".home.APITestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/length_10">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_all_commodity"
+            fresco:placeholderImage="@drawable/all_commodity"
+            fresco:placeholderImageScaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="全部商品"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_36"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/focus_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_focus"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

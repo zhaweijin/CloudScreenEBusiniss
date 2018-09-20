@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiveview.dianshang.view.FocusRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/focus_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/commodity_item_focus"
+    android:clipChildren="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recycle_item_width_233"
+        android:layout_margin="@dimen/length_5">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recycle_item_imageview_height_167"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/commodity_big_icon"
+            fresco:actualImageScaleType="fitXY"
+            fresco:placeholderImageScaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/layout_commodity_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recycle_item_text_height_67"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_gray_color"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/recycle_item_text_name_margin_left_13"
+                android:layout_marginTop="@dimen/length_5"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/recycle_item_text_name_margin_left_13"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/promotion_top1"
+                    android:layout_width="@dimen/recycle_item_promotion_width_47"
+                    android:layout_height="@dimen/recycle_item_promotion_height_24"
+                    android:textSize="@dimen/sp_16"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="@dimen/recycle_item_promotion_margin_top_7"
+                    android:layout_toLeftOf="@+id/promotion_top2"
+                    android:background="@drawable/promotion_top_unselect_bg"
+                    android:text="满减" />
+
+                <TextView
+                    android:id="@+id/promotion_top2"
+                    android:layout_width="@dimen/recycle_item_promotion_width_47"
+                    android:layout_height="@dimen/recycle_item_promotion_height_24"
+                    android:textSize="@dimen/sp_16"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/recycle_item_promotion_margin_top_7"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/promotion_top_unselect_bg"
+                    android:text="满赠" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recycle_item_imageview_height_167"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/live_icon"
+                android:layout_width="@dimen/length_50"
+                android:layout_height="@dimen/length_50"
+                android:layout_centerInParent="true"
+                android:background="@drawable/live_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/market_status"
+                android:layout_width="@dimen/recycle_item_market_status_width_160"
+                android:layout_height="@dimen/recycle_item_market_status_height_87"
+                android:layout_centerInParent="true"
+                android:background="@drawable/invalid_bg"
+                android:visibility="gone" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/delete_icon"
+                android:layout_width="@dimen/recycle_item_text_height_67"
+                android:layout_height="@dimen/recycle_item_text_height_67"
+                android:layout_centerInParent="true"
+                android:background="@drawable/collection_delete_icon"
+                android:visibility="gone"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImageScaleType="centerCrop" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/delete_status"
+                android:layout_width="@dimen/recycle_item_delete_icon_wh_26"
+                android:layout_height="@dimen/recycle_item_delete_icon_wh_26"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/length_5"
+                android:layout_marginTop="@dimen/length_5"
+                android:background="@drawable/collection_delete_status"
+                android:visibility="gone"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImageScaleType="centerCrop" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_live"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recycle_item_text_height_67"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/text_gray_color"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/video_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/length_30"
+                android:layout_marginBottom="@dimen/length_10"
+                android:layout_marginLeft="@dimen/recycle_item_video_margin_left_17"
+                android:layout_marginTop="@dimen/length_30"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/focus_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/commodity_item_focus_selected"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</com.hiveview.dianshang.view.FocusRelativeLayout>
+
+

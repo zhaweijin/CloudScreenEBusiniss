@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="@dimen/layout_invoice_main_width_867"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/layout_invoice_main_margin_left_93"
+        android:layout_marginTop="@dimen/layout_invoice_main_margin_top_113"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/no_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发票信息"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/sp_43" />
+
+
+        <RelativeLayout
+            android:id="@+id/layout_invoice_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_invoice_layout_invoice_type_height_67"
+            android:layout_marginTop="@dimen/layout_invoice_layout_invoice_type_margin_top_43"
+            android:background="@drawable/invoice_selector"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/layout_invoice_layout_invoice_type_name_margin_left_33"
+                android:textColor="@color/main_text_color"
+                android:layout_centerVertical="true"
+                android:id="@+id/invoice_head_text"
+                android:textSize="@dimen/sp_24"
+                android:text="发票抬头" />
+
+            <LinearLayout
+                android:layout_width="@dimen/layout_invoice_layout_arrow_width_290"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_invoice_layout_invoice_type_name_margin_left_33"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/length_20"
+                    android:layout_height="@dimen/layout_invoice_arrow_height_27"
+                    android:id="@+id/arrow_left"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/reduce_commodity" />
+
+                <TextView
+                    android:layout_width="@dimen/layout_invoice_text_width_250"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/invoice"
+                    android:gravity="center"
+                    android:text="单位"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/sp_24" />
+
+                <ImageView
+                    android:layout_width="@dimen/length_20"
+                    android:layout_height="@dimen/layout_invoice_arrow_height_27"
+                    android:id="@+id/arrow_right"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/add_commodity" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_invoice_layout_invoice_type_height_67"
+            android:layout_marginTop="@dimen/length_20"
+            android:background="@drawable/invoice_white_color"
+            android:id="@+id/layout_invoice_company"
+            >
+            <EditText
+                android:id="@+id/invoice_company"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/length_60"
+                android:layout_marginLeft="@dimen/layout_invoice_layout_invoice_type_name_margin_left_33"
+                android:textColorHint="@color/black"
+                android:hint="@string/invoice_input_company_name"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_invoice_layout_invoice_type_height_67"
+            android:layout_marginTop="@dimen/length_20"
+            android:background="@drawable/invoice_white_color"
+            android:id="@+id/layout_invoice_company_number"
+            >
+            <EditText
+                android:id="@+id/invoice_company_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/length_60"
+                android:layout_marginLeft="@dimen/layout_invoice_layout_invoice_type_name_margin_left_33"
+                android:textColorHint="@color/black"
+                android:hint="@string/invoice_input_company_number"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_invoice_layout_invoice_type_height_67"
+            android:layout_marginTop="@dimen/length_20"
+            android:id="@+id/layout_invoice_information"
+            >
+
+            <TextView
+                android:id="@+id/invoice_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发票内容"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/layout_invoice_layout_invoice_type_name_margin_left_33"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24" />
+
+            <TextView
+                android:id="@+id/invoice_information2"
+                android:layout_width="@dimen/layout_invoice_layout_arrow_width_290"
+                android:layout_height="wrap_content"
+                android:text="明细"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/layout_invoice_text_info_margin_right_37"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/length_10"
+            android:id="@+id/invoice_tips"
+            android:text="发票将于订单完成30天后寄出"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_20" />
+        　　
+
+        <Button
+            android:id="@+id/invoice_submit"
+            android:layout_width="@dimen/layout_invoice_submit_width_285"
+            android:layout_height="@dimen/layout_invoice_submit_height_61"
+            android:layout_marginTop="@dimen/length_50"
+            android:layout_gravity="center_horizontal"
+            android:text="确认提交"
+            android:background="@drawable/shopping_cart_button_selector"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/sp_24" />
+
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_toRightOf="@+id/main"
+        android:id="@+id/div"
+        android:background="#D8D8D8"
+        android:layout_width="@dimen/length_5"
+        android:layout_marginLeft="@dimen/layout_invoice_center_div_margin_left_35"
+        android:layout_marginTop="@dimen/layout_invoice_center_div_margin_top_210"
+        android:layout_height="@dimen/layout_invoice_center_div_height_373" />
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/div"
+        android:layout_marginLeft="@dimen/layout_invoice_qr_margin_left_33"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/layout_invoice_qr_margin_top_210"
+        android:layout_width="@dimen/length_200"
+        android:layout_height="@dimen/length_200">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/invoice_qrcode"
+            android:layout_width="@dimen/length_200"
+            android:layout_height="@dimen/length_200" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:text="手机扫描输入"
+            android:id="@+id/qr_text"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginTop="@dimen/layout_invoice_qr_text_margin_top_17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

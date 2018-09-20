@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+def releaseTime() {
+    return new Date().format("yyyyMMddHHss", TimeZone.getTimeZone("Asia/Shanghai"))
+}
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.0"
+
+    signingConfigs {
+        release {
+            keyAlias 'carter'
+            keyPassword 'carter'
+            storeFile file('/home/carter/vmShare/temp/carter.keystore')
+            storePassword 'carter'
+        }
+    }
+
+
+    defaultConfig {
+        applicationId "com.hiveview.dianshang.upgrade.manager"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            //签名
+            signingConfig signingConfigs.release
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            //release apk
+            if (outputFile != null && outputFile.name.endsWith('release.apk')) {
+                //这里修改apk文件名
+                def fileName = "Hiveview_Domybox_Dianshang-${defaultConfig.versionName}-${releaseTime()}.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+    //----------
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    //-----------
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    //testCompile 'junit:junit:4.12'
+    provided files('jar/hiveviewcore_20170829.jar')
+}

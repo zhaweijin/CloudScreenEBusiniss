@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/length_110"
+    android:layout_height="@dimen/select_comodity_type_height_77"
+    android:orientation="vertical"
+    android:background="@drawable/focused_view_selector"
+    android:focusable="true"
+    android:id="@+id/layout_select_item_color"
+    android:focusableInTouchMode="true"
+    tools:context=".home.APITestActivity">
+
+    <ImageView
+        android:id="@+id/image_bg"
+        android:layout_margin="@dimen/radius"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="@drawable/selected_commodity_type_color"
+        android:layout_width="@dimen/length_47"
+        android:layout_height="@dimen/length_47" />
+
+</RelativeLayout>

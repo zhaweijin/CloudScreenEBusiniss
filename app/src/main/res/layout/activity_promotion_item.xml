@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#D3D3D3">
+
+    <!--策略标志和策略语句-->
+    <RelativeLayout
+        android:id="@+id/promotion_container"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/promotion_mark"
+            android:layout_height="@dimen/promotion_information_dp_60"
+            android:layout_width="wrap_content">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="@dimen/promotion_information_dp_80"
+                android:layout_height="@dimen/promotion_information_dp_60"
+                android:src ="@drawable/manjian"/>
+
+            <TextView
+                android:id="@+id/mark"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/promotion_information_dp_19"
+                android:text=""
+                android:textSize="@dimen/sp_20"
+                android:textColor="@color/text_red_color"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/promotion_slogan"
+            android:layout_marginTop="@dimen/promotion_information_dp_25"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/promotion_information_dp_15"
+            android:layout_toRightOf="@+id/promotion_mark"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/slogan"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text=""
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--第二条分割线-->
+    <LinearLayout
+        android:background="#b8b8b8"
+        android:layout_marginBottom="@dimen/promotion_information_dp_6.67"
+        android:layout_marginLeft="@dimen/promotion_information_dp_95"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/promotion_information_dp_1">
+
+    </LinearLayout>
+
+    <!--时间、赠品、说明和产品规格标语-->
+    <RelativeLayout
+        android:id="@+id/promotion_time"
+        android:layout_marginLeft="@dimen/promotion_information_dp_95"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--赠品-->
+        <com.hiveview.dianshang.view.MyListView
+            android:id="@+id/present"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:divider="@color/myListView_color"
+            android:dividerHeight="@dimen/promotion_information_dp_1"
+            android:layout_marginBottom="@dimen/promotion_information_dp_20"/>
+
+        <!--时间-->
+        <TextView
+            android:id="@+id/time_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/present"
+            android:text="时间："
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/validity"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/time_title"
+            android:layout_below="@+id/present"
+            android:text=""
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/time_mark"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/present"
+            android:layout_toRightOf="@+id/validity"
+            android:text="  至  "
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/deadline"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/time_mark"
+            android:layout_below="@+id/present"
+            android:text=""
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black"/>
+
+        <!--说明-->
+        <TextView
+            android:id="@+id/state_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/validity"
+            android:text="说明："
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/state"
+            android:layout_toRightOf="@+id/state_title"
+            android:layout_below="@+id/validity"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/commoditySize_title"
+            android:layout_marginTop="@dimen/promotion_information_dp_36"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/state"
+            android:text="参与产品与规格"
+            android:textSize="@dimen/sp_27"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/limitnum_title"
+            android:layout_marginTop="@dimen/promotion_information_dp_54"
+            android:layout_marginLeft="@dimen/promotion_information_dp_650"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/commoditySize_title"
+            android:layout_below="@+id/state"
+            android:text="限购数量"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <!--第三条分割线-->
+    <LinearLayout
+        android:background="#b8b8b8"
+        android:layout_marginLeft="@dimen/promotion_information_dp_95"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/promotion_information_dp_1">
+    </LinearLayout>
+
+    <!--产品规格和满减梯度标语-->
+    <RelativeLayout
+        android:id="@+id/promotion_commodity_size_title"
+        android:layout_marginLeft="@dimen/promotion_information_dp_95"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--规格列表，只有限购中显示-->
+        <com.hiveview.dianshang.view.MyListView
+            android:id="@+id/listView_commoditySize"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:divider="@color/myListView_color"
+            android:dividerHeight="@dimen/promotion_information_dp_1"
+            android:scrollbars="none"
+            android:layout_marginBottom="@dimen/promotion_information_dp_22.67"
+           android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/commodity_size"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/promotion_information_dp_10.67"
+            android:layout_marginBottom="@dimen/promotion_information_dp_22.67"
+            android:text=""
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black"/>
+
+        <!--满减梯度标语，只有满减中显示-->
+        <TextView
+            android:id="@+id/promotion_title"
+            android:layout_marginTop="@dimen/promotion_information_dp_46.67"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/commodity_size"
+            android:text="促销"
+            android:textSize="@dimen/sp_27"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <!--第四条分割线-->
+    <LinearLayout
+        android:id="@+id/line_four"
+        android:background="#b8b8b8"
+        android:layout_marginTop="@dimen/promotion_information_dp_6.67"
+        android:layout_marginBottom="@dimen/promotion_information_dp_10.67"
+        android:layout_marginLeft="@dimen/promotion_information_dp_95"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/promotion_information_dp_1"
+        android:orientation="vertical"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <!--满减梯度，只有满减中显示-->
+    <RelativeLayout
+        android:id="@+id/promotion_commodity_size"
+        android:layout_marginLeft="@dimen/promotion_information_dp_95"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/promotion"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/promotion_information_dp_22.67"
+            android:text=""
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/num3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/promotion"
+            android:layout_marginBottom="@dimen/promotion_information_dp_22.67"
+            android:text=""
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/jian"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/num3"
+            android:layout_marginBottom="@dimen/promotion_information_dp_22.67"
+            android:text="元的赠品，赠完即止"
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

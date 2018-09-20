@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/devicedetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+<LinearLayout
+    android:layout_width="@dimen/width_aftersale_600"
+    android:layout_height="@dimen/gap_addressmanager_67"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/aftersales_selector">
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="@dimen/width_aftersale_110"
+        android:layout_height="match_parent"
+        android:text="购买数量"
+        android:textColor="@drawable/textcolor_selector"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_27"/>
+
+    <ImageView
+        android:id="@+id/page_left"
+        android:layout_width="@dimen/gap_allcommodity_21"
+        android:layout_height="@dimen/length_33"
+        android:src="@drawable/triangle_left"
+        android:layout_marginLeft="@dimen/length_33"/>
+
+    <com.hiveview.dianshang.view.FileTitleTextView
+        android:id="@+id/item_setting"
+        android:layout_width="@dimen/length_200"
+        android:layout_height="match_parent"
+        android:text="重复下单/误下单"
+        android:layout_marginLeft="@dimen/gap_orderdetailsdialog_43"
+        android:textColor="@drawable/textcolor_selector"
+        android:textSize="@dimen/sp_27"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"/>
+
+    <ImageView
+        android:id="@+id/page_right"
+        android:layout_width="@dimen/gap_allcommodity_21"
+        android:layout_height="@dimen/length_33"
+        android:src="@drawable/triangle_right"
+        android:layout_marginLeft="@dimen/length_33"/>
+
+</LinearLayout>
+</LinearLayout>
+
+

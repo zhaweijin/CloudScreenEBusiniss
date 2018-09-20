@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="true"
+    android:orientation="horizontal">
+
+    <include layout="@layout/activity_main_left_bar"
+        android:layout_width="@dimen/width_mainactivity_147"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/main_leftbar">
+    </include>
+
+    <FrameLayout
+        android:layout_toRightOf="@+id/main_leftbar"
+        android:layout_marginLeft="@dimen/length_93"
+        android:id="@+id/layout_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+    </FrameLayout>
+
+    <include layout="@layout/activity_main_nav_bar"
+        android:layout_width="@dimen/length_93"
+        android:layout_toRightOf="@+id/main_leftbar"
+        android:layout_height="match_parent"
+        android:id="@+id/main_navbar">
+    </include>
+
+
+    <FrameLayout
+        android:layout_toRightOf="@+id/main_leftbar"
+        android:layout_marginLeft="@dimen/length_93"
+        android:id="@+id/layout_no_focus_layer"
+        android:visibility="gone"
+        android:background="@color/main_no_focus_layer_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>

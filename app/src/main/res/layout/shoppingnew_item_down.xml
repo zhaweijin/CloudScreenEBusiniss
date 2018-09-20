@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/width_shopping_867"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3">
+    <!--商品展示一栏-->
+    <include
+        layout="@layout/shoppingnew_layout_itemview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_shopping_167"
+        android:layout_marginBottom="@dimen/gap_shopping_10"></include>
+
+
+</LinearLayout>

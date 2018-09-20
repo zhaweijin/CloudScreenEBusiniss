@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/type_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.APITestActivity">
+
+
+    <ImageView
+        android:id="@+id/focus"
+        android:layout_width="@dimen/length_200"
+        android:layout_height="@dimen/gap_addressmanager_67"
+        android:layout_marginLeft="@dimen/recoment_540_view"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/select_commodity_item_type_no_focus" />
+
+
+    <com.hiveview.dianshang.view.TypeGallery
+        android:id="@+id/gallery_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_apitestactivity_70"
+        android:layout_centerHorizontal="true"
+        android:spacing="@dimen/height_collectionmain_35"
+        android:layout_marginLeft="@dimen/length_53"
+        android:layout_marginRight="@dimen/length_53"
+        android:background="#00000000"
+        android:descendantFocusability="afterDescendants">
+    </com.hiveview.dianshang.view.TypeGallery>
+
+
+</RelativeLayout>

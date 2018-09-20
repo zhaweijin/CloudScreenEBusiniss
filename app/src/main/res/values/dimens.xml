@@ -1,0 +1,698 @@
+<resources>
+    <!-- common sp -->
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_19">19sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_22">22sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_25">25sp</dimen>
+    <dimen name="sp_27">27sp</dimen>
+    <dimen name="sp_28">28sp</dimen>
+    <dimen name="sp_30">30sp</dimen>
+    <dimen name="sp_32">32sp</dimen>
+    <dimen name="sp_33">33sp</dimen>
+    <dimen name="sp_35">35sp</dimen>
+    <dimen name="sp_36">36sp</dimen>
+    <dimen name="sp_40">40sp</dimen>
+    <dimen name="sp_43">43sp</dimen>
+    <dimen name="sp_47">47sp</dimen>
+    <dimen name="sp_48">48sp</dimen>
+    <dimen name="sp_53">53sp</dimen>
+    <dimen name="sp_62">62sp</dimen>
+    <dimen name="sp_64">64sp</dimen>
+    <dimen name="sp_67">67sp</dimen>
+
+    <dimen name="length_1">1dp</dimen>
+    <dimen name="length_2">2dp</dimen>
+    <dimen name="length_3">3dp</dimen>
+    <dimen name="length_4">4dp</dimen>
+    <dimen name="length_5">5dp</dimen>
+    <dimen name="length_6">6dp</dimen>
+    <dimen name="length_7">7dp</dimen>
+    <dimen name="length_8">8dp</dimen>
+    <dimen name="length_10">10dp</dimen>
+    <dimen name="length_13">13dp</dimen>
+    <dimen name="length_14">14dp</dimen>
+    <dimen name="length_15">15dp</dimen>
+    <dimen name="length_17">17dp</dimen>
+    <dimen name="length_20">20dp</dimen>
+    <dimen name="length_22">22dp</dimen>
+    <dimen name="length_25">25dp</dimen>
+    <dimen name="length_26">26dp</dimen>
+    <dimen name="length_27">27dp</dimen>
+    <dimen name="length_30">30dp</dimen>
+    <dimen name="length_33">33dp</dimen>
+    <dimen name="length_38">38dp</dimen>
+    <dimen name="length_40">40dp</dimen>
+    <dimen name="length_46">46dp</dimen>
+    <dimen name="length_47">47dp</dimen>
+    <dimen name="length_48">48dp</dimen>
+    <dimen name="length_50">50dp</dimen>
+    <dimen name="length_53">53dp</dimen>
+    <dimen name="length_60">60dp</dimen>
+    <dimen name="length_70">70dp</dimen>
+    <dimen name="length_80">80dp</dimen>
+    <dimen name="length_93">93dp</dimen>
+    <dimen name="length_100">100dp</dimen>
+    <dimen name="length_110">110dp</dimen>
+    <dimen name="length_120">120dp</dimen>
+    <dimen name="length_160">160dp</dimen>
+    <dimen name="length_200">200dp</dimen>
+    <dimen name="length_280">280dp</dimen>
+    <dimen name="length_300">300dp</dimen>
+    <dimen name="length_400">400dp</dimen>
+    <dimen name="length_500">500dp</dimen>
+    <dimen name="length_600">600dp</dimen>
+
+
+    <dimen name="length_53sp_unit">28dp</dimen>
+
+    <!--AfterSaleServiceMain-->
+    <dimen name="gap_aftersale_16">16dp</dimen>
+    <dimen name="gap_aftersale_49">49dp</dimen>
+
+    <!--ShoppingCartGrid-->
+    <dimen name="shoppingcartgrid_7">7dp</dimen>
+    <dimen name="shoppingcartgrid_53">-53dp</dimen>
+    <dimen name="shoppingcartgrid_59">59dp</dimen>
+    <dimen name="shoppingcartgrid_136">136dp</dimen>
+    <dimen name="height_shoppingcartgrid_108">108dp</dimen>
+    <dimen name="height_shoppingcartgrid_387">387dp</dimen>
+
+
+
+
+    <!--CommodityMainCategory-->
+    <dimen name="commoditymaincategory_280">280dp</dimen>
+    <dimen name="commoditymaincategory_329">329dp</dimen>
+    <!--CommodityInfomation-->
+    <dimen name="commodityinfomation_300">300dp</dimen>
+    <dimen name="commodityinfomation_550">550dp</dimen>
+    <dimen name="commodityinfomation_600">600dp</dimen>
+    <!--SelectCommodityType-->
+    <dimen name="selectcommoditytype_63">63dp</dimen>
+    <dimen name="selectcommoditytype_77">77dp</dimen>
+    <dimen name="selectcommoditytype_145">145dp</dimen>
+    <dimen name="selectcommoditytype_190">190dp</dimen>
+    <dimen name="selectcommoditytype_208">208dp</dimen>
+    <dimen name="selectcommoditytype_255">255dp</dimen>
+    <dimen name="selectcommoditytype_667">667dp</dimen>
+    <dimen name="sku_promotion_title_width_500">500dp</dimen>
+    <dimen name="sku_commodity_title_max_width_500">500dp</dimen>
+    <dimen name="sku_commodity_name_max_width_550">550dp</dimen>
+    <dimen name="sku_commodity_icon_wh_67">67dp</dimen>
+    <dimen name="sku_commodity_item_expand_margin_top_13">13dp</dimen>
+
+
+    <!--OrderMain-->
+    <dimen name="ordermain_65">65dp</dimen>
+    <dimen name="ordermain_130">130dp</dimen>
+    <dimen name="ordermain_140">140dp</dimen>
+    <dimen name="ordermain_500">500dp</dimen>
+    <dimen name="ordermain_515">515dp</dimen>
+    <dimen name="width_ordermain_75">75dp</dimen>
+    <dimen name="width_ordermain_176">176dp</dimen>
+    <dimen name="width_ordermain_287">287dp</dimen>
+    <dimen name="width_ordermain_373">373dp</dimen>
+    <dimen name="width_ordermain_653">653dp</dimen>
+    <dimen name="width_ordermain_954">954dp</dimen>
+    <dimen name="height_ordermain_109">109dp</dimen>
+    <dimen name="height_ordermain_573">573dp</dimen>
+
+
+
+    <!--CommodityMainCategory-->
+    <dimen name="gap">40dp</dimen>
+    <!--NetworkErrorWindow-->
+    <dimen name="window_width_1280">1280dp</dimen>
+    <dimen name="window_height_720">720dp</dimen>
+
+    <!--CommodityInfomation-->
+    <dimen name="commodity_infomartion_qr_magrin_top_40">40dp</dimen>
+    <dimen name="commodity_infomartion_qr_magrin_left_47">47dp</dimen>
+    <dimen name="commodity_infomartion_qr_magrin_wh_180">180dp</dimen>
+    <dimen name="imgw_commodityinfo_66">66dp</dimen>
+    <dimen name="imgw_commodityinfo_245">245dp</dimen>
+    <dimen name="imgw_commodityinfo_313">313dp</dimen>
+    <dimen name="imgh_commodityinfo_57">57dp</dimen>
+    <dimen name="imgh_commodityinfo_80">80dp</dimen>
+    <dimen name="imgh_commodityinfo_170">170dp</dimen>
+    <dimen name="imgh_commodityinfo_230">230dp</dimen>
+    <dimen name="gap_commodity_30">30dp</dimen>
+    <dimen name="gap_commodity_317">317dp</dimen>
+    <dimen name="gap_commodity_450">450dp</dimen>
+    <dimen name="commodity_express_price_margin_left_19">19dp</dimen>
+    <dimen name="commodity_support_width_127">127dp</dimen>
+    <dimen name="commodity_support_height_40">40dp</dimen>
+    <dimen name="commodity_support_margin_left_27">27dp</dimen>
+    <dimen name="info_layout_focus_view_width_317">317dp</dimen>
+    <dimen name="info_layout_click_item_height_60">60dp</dimen>
+    <dimen name="info_layout_click_item_icon_wh_27">27dp</dimen>
+    <dimen name="info_layout_click_item_icon_margin_left_20">20dp</dimen>
+    <dimen name="information_sale_promotion_item_height_30">30dp</dimen>
+    <dimen name="information_sale_promotion_item_icon_margin_7">7dp</dimen>
+    <dimen name="information_sale_promotion_item_text_margin_5">5dp</dimen>
+    <dimen name="information_sale_promotion_item_h1_270">270dp</dimen>
+    <dimen name="information_sale_promotion_item_h2_295">295dp</dimen>
+    <dimen name="information_sale_promotion_item_h3_330">330dp</dimen>
+    <dimen name="select_commodity_item_information_height_230">230dp</dimen>
+
+    <!--APITestActivity-->
+    <dimen name="width_apitestactivity_218">218dp</dimen>
+    <dimen name="height_apitestactivity_70">70dp</dimen>
+    <dimen name="height_apitestactivity_462">462dp</dimen>
+
+
+
+    <!--AddressManager-->
+    <dimen name="width_addressmanager_800">800dp</dimen>
+    <dimen name="width_addressmanager_213">213dp</dimen>
+    <dimen name="height_addressmanager_163">163dp</dimen>
+    <dimen name="height_addressmanager_173">173dp</dimen>
+    <dimen name="gap_addressmanager_57">57dp</dimen>
+    <dimen name="gap_addressmanager_67">67dp</dimen>
+    <dimen name="gap_addressmanager_73">73dp</dimen>
+    <dimen name="gap_addressmanager_76">76dp</dimen>
+    <dimen name="gap_addressmanager_260">260dp</dimen>
+    <dimen name="width_addressmanager_23">23dp</dimen>
+    <dimen name="width_addressmanager_169">169dp</dimen>
+
+
+
+    <!--MainActivity-->
+    <dimen name="width_mainactivity_71">71dp</dimen>
+    <dimen name="width_mainactivity_89">89dp</dimen>
+    <dimen name="width_mainactivity_147">147dp</dimen>
+    <dimen name="height_mainactivity_68">68dp</dimen>
+    <dimen name="height_mainactivity_90">90dp</dimen>
+
+    <!--activity_test-->
+    <dimen name="height_test_230">230dp</dimen>
+    <!--APITestActivity-->
+    <dimen name="width_testactivity_250">250dp</dimen>
+    <dimen name="height_testactivity_120">120dp</dimen>
+
+    <!--AllCommodity-->
+    <dimen name="gap_allcommodity_21">21dp</dimen>
+    <dimen name="gap_allcommodity_26">26dp</dimen>
+    <dimen name="gap_allcommodity_31">31dp</dimen>
+
+    <!--CommodityCategory-->
+    <dimen name="gap_commoditycategory_9">9dp</dimen>
+    <dimen name="gap_commoditycategory_25">25dp</dimen>
+    <dimen name="gap_commoditycategory_42">42dp</dimen>
+    <dimen name="gap_commoditycategory_45">45dp</dimen>
+    <dimen name="gap_commoditycategory_233">233dp</dimen>
+    <dimen name="width_commoditycategory_150">150dp</dimen>
+    <dimen name="width_commoditycategory_153">153dp</dimen>
+    <dimen name="width_commoditycategory_240">240dp</dimen>
+    <dimen name="height_commoditycategory_39">39dp</dimen>
+
+
+    <!--CategoryMainItemView-->
+    <dimen name="height_categorymainitemview_280">280dp</dimen>
+    <dimen name="height_categorymainitemview_293">293dp</dimen>
+    <dimen name="width_categorymainitemview_329">329dp</dimen>
+    <dimen name="root_category_item_view_height_280">280dp</dimen>
+
+    <!--CollectionMain-->
+    <dimen name="height_collectionmain_18">18dp</dimen>
+    <dimen name="height_collectionmain_35">35dp</dimen>
+    <dimen name="gap_collectionmain_28">28dp</dimen>
+    <dimen name="all_delete_margin_left_10">10dp</dimen>
+    <dimen name="collection_item_invalid_width_160">160dp</dimen>
+    <dimen name="collection_item_invalid_height_87">87dp</dimen>
+    <dimen name="all_delete_width_167">167dp</dimen>
+    <dimen name="all_delete_height_40">40dp</dimen>
+    <dimen name="collection_item_promotion_width_47">47dp</dimen>
+    <dimen name="collection_item_promotion_height_24">24dp</dimen>
+    <dimen name="collection_item_promotion_margin_left_7">7dp</dimen>
+
+
+    <!--CommodityRecommend-->
+    <dimen name="width_commodityrd_420">420dp</dimen>
+    <dimen name="width_commodityrd_495">495dp</dimen>
+
+
+    <!--CommoditySpecial-->
+    <dimen name="width_commodityspecial_1050">1050dp</dimen>
+
+    <!--DeleteAddressPopWindow-->
+    <dimen name="gap_popwindow_129">129dp</dimen>
+    <!--Test-->
+    <dimen name="gap_test_11">11dp</dimen>
+    <!--AfterdetailsDialog-->
+    <dimen name="height_afterdetail_155">155dp</dimen>
+    <dimen name="gap_afterdetail_12">12dp</dimen>
+    <dimen name="gap_afterdetail_24">24dp</dimen>
+    <dimen name="gap_afterdetail_37">37dp</dimen>
+    <dimen name="gap_afterdetail_44">44dp</dimen>
+    <dimen name="gap_afterdetail_48">48dp</dimen>
+    <dimen name="height_afterdetail_54">54dp</dimen>
+    <dimen name="height_afterdetail_83">83dp</dimen>
+    <dimen name="width_afterdetai_166">166dp</dimen>
+    <dimen name="width_afterdetai_239">239dp</dimen>
+    <dimen name="width_afterdetail_533">533dp</dimen>
+
+    <!--AfterSalesDialog-->
+    <dimen name="width_aftersale_110">110dp</dimen>
+    <dimen name="width_aftersale_600">600dp</dimen>
+    <dimen name="width_aftersale_750">750dp</dimen>
+    <dimen name="width_aftersale_953">953dp</dimen>
+    <dimen name="gap_aftersaledialog_29">29dp</dimen>
+    <dimen name="gap_aftersaledialog_32">32dp</dimen>
+    <dimen name="gap_aftersaledialog_72">72dp</dimen>
+    <!--ApplyPromptDialog-->
+    <dimen name="gap_applypromptd_227">227dp</dimen>
+
+    <!--ConfirmDialog-->
+    <dimen name="width_confirmdialog_933">933dp</dimen>
+    <dimen name="height_confirmdialog_427">427dp</dimen>
+    <!--OrderdetailsDialog-->
+    <dimen name="width_orderdetailsdialog_285">285dp</dimen>
+    <dimen name="width_orderdetailsdialog_290">290dp</dimen>
+    <dimen name="width_orderdetailsdialog_867">867dp</dimen>
+    <dimen name="gap_orderdetailsdialog_43">43dp</dimen>
+    <dimen name="gap_orderdetailsdialog_113">113dp</dimen>
+
+
+    <dimen name="height_orderdetailsdialog_61">61dp</dimen>
+    <dimen name="height_orderdetailsdialog_107">107dp</dimen>
+    <!--OrderLogisticsDialog-->
+    <dimen name="gap_logistics_168">168dp</dimen>
+    <dimen name="width_logistics_247">247dp</dimen>
+    <dimen name="width_logistics_309">309dp</dimen>
+    <dimen name="gap_logistics_19">19dp</dimen>
+    <dimen name="gap_logistics_125">125dp</dimen>
+    <dimen name="gap_logistics_143">143dp</dimen>
+    <dimen name="gap_logistics_210">210dp</dimen>
+    <dimen name="gap_logistics_270">270dp</dimen>
+    <dimen name="gap_logistics_303">303dp</dimen>
+    <dimen name="gap_logistics_590">590dp</dimen>
+    <dimen name="gap_logistics_683">683dp</dimen>
+
+
+    <!--PaymentTipDialog-->
+    <dimen name="gap_paymentexit_124">124dp</dimen>
+    <dimen name="width_paysucess_133">133dp</dimen>
+    <dimen name="width_pay_347">347dp</dimen>
+
+    <!--ShoppingCartList-->
+    <dimen name="height_shoppingcartlist_127">127dp</dimen>
+    <dimen name="shoppingcart_list_listview_margin_right_23">23dp</dimen>
+    <dimen name="shoppingcart_list_div_width_5">5dp</dimen>
+    <dimen name="shoppingcart_list_div_height_573">573dp</dimen>
+    <dimen name="shoppingcart_list_layout_right_margin_left_53">53dp</dimen>
+    <dimen name="shoppingcart_list_layout_right_margin_right_87">87dp</dimen>
+    <dimen name="shoppingcart_list_layout_right_width_373">373dp</dimen>
+    <dimen name="shoppingcart_list_layout_right_item_height_33">33dp</dimen>
+    <dimen name="shoppingcart_list_margin_7">7dp</dimen>
+    <dimen name="shoppingcart_list_layout_right_total_price_height_47">47dp</dimen>
+    <dimen name="shoppingcart_direct_layout_order_sn_margin_left_10">10dp</dimen>
+    <dimen name="shoppingcart_direct_layout_item_height_107">107dp</dimen>
+    <dimen name="shoppingcart_direct_item_icon_wh_67">67dp</dimen>
+    <dimen name="shoppingcart_direct_item_invalid_text_margin_left_28">28dp</dimen>
+    <dimen name="shoppingcart_direct_item_name_width_400">400dp</dimen>
+    <dimen name="shoppingcart_item_gift_name_width_450">450dp</dimen>
+    <dimen name="shoppingcart_item_type_margin_right_90">90dp</dimen>
+
+
+    <!-- 共用-->
+    <dimen name="linew_dp">1.5dp</dimen>
+    <dimen name="radius">5dp</dimen>
+    <dimen name="height">167dp</dimen>
+    <dimen name="gap_226">226dp</dimen>
+    <dimen name="height_87">87dp</dimen>
+    <dimen name="width">687dp</dimen>
+    <dimen name="width_182">182dp</dimen>
+    <dimen name="height_225">225dp</dimen>
+    <dimen name="height_104">104dp</dimen>
+
+    <!-- order cancel dialog-->
+    <dimen name="order_cancel_dialog_width_350">350dp</dimen>
+    <dimen name="order_cancel_dialog_height_400">400dp</dimen>
+
+    <!-- search main -->
+    <dimen name="search_key_margin_left_20">20dp</dimen>
+    <dimen name="search_key_margin_top_11">11dp</dimen>
+    <dimen name="search_key_width_220">220dp</dimen>
+    <dimen name="search_key_height_65">65dp</dimen>
+    <dimen name="search_no_key_height_150">150dp</dimen>
+    <dimen name="search_recomment_main_layout_margin_top_51">51dp</dimen>
+    <dimen name="search_recomment_main_layout_margin_right_113">113dp</dimen>
+    <dimen name="search_recomment_search_qr_text_margin_top_17">17dp</dimen>
+    <dimen name="search_recomment_search_top_main_top_53">53dp</dimen>
+    <dimen name="search_recomment_commotity_search_title_margin_left_48">48dp</dimen>
+    <dimen name="serarch_key_width_220">220dp</dimen>
+    <dimen name="serarch_key_height_65">65dp</dimen>
+    <dimen name="serarch_key_margin_top_11">11dp</dimen>
+    <dimen name="serarch_layout_contain_search_key_height_155">155dp</dimen>
+    <dimen name="serarch_layout_key_margin_top_47">47dp</dimen>
+    <dimen name="serarch_layout_search_key_width_573">573dp</dimen>
+    <dimen name="serarch_layout_search_button_margin_left_13">13dp</dimen>
+
+
+
+    <dimen name="recoment_1040_view">1040dp</dimen>
+    <dimen name="recoment_540_view">540dp</dimen>
+    <dimen name="recoment_260_view">260dp</dimen>
+    <dimen name="recoment_360_view">360dp</dimen>
+    <dimen name="recoment_520_view">520dp</dimen>
+    <dimen name="recoment_180_view">180dp</dimen>
+    <dimen name="recoment_167_view">167dp</dimen>
+
+    <!-- setaddress_pop -->
+    <dimen name="setaddress_pop_width_600">600dp</dimen>
+    <dimen name="setaddress_pop_height_400">400dp</dimen>
+
+    <!-- select commodity type -->
+    <dimen name="select_comodity_type_width_255">255dp</dimen>
+    <dimen name="select_comodity_type_height_77">77dp</dimen>
+    <dimen name="select_comodity_colors_width_100">100dp</dimen>
+    <dimen name="select_comodity_promotion_item_height_33">33dp</dimen>
+    <dimen name="select_comodity_promotion_item_margin_top_7">7dp</dimen>
+    <dimen name="select_comodity_promotion_item_promotion_type_name_width_80">80dp</dimen>
+    <dimen name="select_comodity_promotion_item_promotion_type_name_height_33">33dp</dimen>
+    <dimen name="select_comodity_promotion_item_promotion_type_margin_left_15">15dp</dimen>
+    <dimen name="select_comodity_item_r_layout_margin_left_53">53dp</dimen>
+    <dimen name="select_comodity_item_r_layout_margin_right_80">80dp</dimen>
+    <dimen name="select_comodity_item_icon_width_245">245dp</dimen>
+    <dimen name="select_comodity_item_icon_height_170">170dp</dimen>
+    <dimen name="select_comodity_item_icon_margin_top_40">40dp</dimen>
+    <dimen name="select_comodity_item_commodity_collecton_status_width_66">66dp</dimen>
+    <dimen name="select_comodity_item_commodity_collecton_status_margin_top_9">9dp</dimen>
+    <dimen name="select_comodity_item_commodity_commodity_support_width_127">127dp</dimen>
+    <dimen name="select_comodity_div_margin_left_53">53dp</dimen>
+    <dimen name="select_comodity_layout_contain_margint_top_7">7dp</dimen>
+    <dimen name="select_comodity_number_width_667">667dp</dimen>
+    <dimen name="select_comodity_number_height_89">89dp</dimen>
+    <dimen name="select_comodity_arrow_width_21">21dp</dimen>
+    <dimen name="select_comodity_arrow_height_27">27dp</dimen>
+    <dimen name="select_comodity_arrow_margin_left_15">15dp</dimen>
+    <dimen name="select_comodity_number_layout_width_208">208dp</dimen>
+    <dimen name="select_comodity_number_layout_margin_left_63">63dp</dimen>
+
+    <!-- Invoice -->
+    <dimen name="layout_invoice_main_width_867">867dp</dimen>
+    <dimen name="layout_invoice_main_margin_left_93">93dp</dimen>
+    <dimen name="layout_invoice_main_margin_top_113">113dp</dimen>
+    <dimen name="layout_invoice_layout_invoice_type_height_67">67dp</dimen>
+    <dimen name="layout_invoice_layout_invoice_type_margin_top_43">43dp</dimen>
+    <dimen name="layout_invoice_layout_invoice_type_name_margin_left_33">33dp</dimen>
+    <dimen name="layout_invoice_layout_arrow_width_290">290dp</dimen>
+    <dimen name="layout_invoice_arrow_height_27">27dp</dimen>
+    <dimen name="layout_invoice_text_width_250">250dp</dimen>
+    <dimen name="layout_invoice_text_info_margin_right_37">37dp</dimen>
+    <dimen name="layout_invoice_submit_width_285">285dp</dimen>
+    <dimen name="layout_invoice_submit_height_61">61dp</dimen>
+    <dimen name="layout_invoice_center_div_margin_left_35">35dp</dimen>
+    <dimen name="layout_invoice_center_div_margin_top_210">210dp</dimen>
+    <dimen name="layout_invoice_center_div_height_373">373dp</dimen>
+    <dimen name="layout_invoice_qr_margin_left_33">33dp</dimen>
+    <dimen name="layout_invoice_qr_margin_top_210">210dp</dimen>
+    <dimen name="layout_invoice_qr_text_margin_top_17">17dp</dimen>
+
+
+    <!-- recycle item -->
+    <dimen name="recycle_item_width_233">233dp</dimen>
+    <dimen name="recycle_item_imageview_height_167">167dp</dimen>
+    <dimen name="recycle_item_text_height_67">67dp</dimen>
+    <dimen name="recycle_item_text_name_margin_left_13">13dp</dimen>
+    <dimen name="recycle_item_promotion_width_47">47dp</dimen>
+    <dimen name="recycle_item_promotion_height_24">24dp</dimen>
+    <dimen name="recycle_item_promotion_margin_top_7">7dp</dimen>
+    <dimen name="recycle_item_market_status_width_160">160dp</dimen>
+    <dimen name="recycle_item_market_status_height_87">87dp</dimen>
+    <dimen name="recycle_item_delete_icon_wh_26">26dp</dimen>
+    <dimen name="recycle_item_video_margin_left_17">17dp</dimen>
+
+
+    <dimen name="shopping_cart_dialog_width_827">827dp</dimen>
+    <dimen name="nav_width_240">240dp</dimen>
+    <dimen name="commodity_main_category_item_width_347">347dp</dimen>
+    <dimen name="commodity_main_category_item_height_293">293dp</dimen>
+
+
+    <dimen name="divide">20dp</dimen>
+
+
+    <dimen name="recoment_item_margin_10">10dp</dimen>
+    <dimen name="home_shopping_cart_item_width_100">100dp</dimen>
+    <dimen name="home_shopping_cart_item_height_100">100dp</dimen>
+    <dimen name="home_shopping_cart_item_margin_top_8">8dp</dimen>
+    <dimen name="home_shopping_cart_item_margin_top_0">0dp</dimen>
+    <dimen name="home_shopping_cart_item_margin_top3_0">0dp</dimen>
+    <dimen name="home_shopping_cart_item_margin_top4_0">0dp</dimen>
+    <dimen name="home_shopping_cart_text_margin_top_25">25dp</dimen>
+    <dimen name="home_shopping_cart_text_margin_top_3">3dp</dimen>
+
+
+    <dimen name="PlayerErrorWindow_setWidth_1280">1280dp</dimen>
+    <dimen name="PlayerErrorWindow_setHeight_720">720dp</dimen>
+    <dimen name="PlayerErrorWindow_showWindow_location_X_0">0dp</dimen>
+    <dimen name="PlayerErrorWindow_showWindow_location_Y_0">0dp</dimen>
+    <dimen name="loadingview_width_57">57dp</dimen>
+    <dimen name="loadingview_height_145">145dp</dimen>
+    <dimen name="qr_width_267">267dp</dimen>
+    <dimen name="qr_height_267">267dp</dimen>
+
+    <dimen name="main_nav_width_93">93dp</dimen>
+    <dimen name="item_view_div_8">8dp</dimen>
+    <dimen name="category_item_view_div_8">8dp</dimen>
+
+    <dimen name="item_view_right_11">11dp</dimen>
+
+    <dimen name="special_advertisment_height_500">500dp</dimen>
+
+    <dimen name="common_dialog_width_933">933dp</dimen>
+    <dimen name="common_dialog_height_427">427dp</dimen>
+
+    <dimen name="recycle_marign_buttom_30">30dp</dimen>
+    <dimen name="recycle_marign_right_11">11dp</dimen>
+
+
+    <!-- promotion -->
+    <dimen name="promotion_commodity_layout_width_1050">1050dp</dimen>
+    <dimen name="promotion_commodity_head_layout_margin_left_10">10dp</dimen>
+    <dimen name="promotion_commodity_head_layout_height_80">80dp</dimen>
+    <dimen name="promotion_commodity_head_promotion_type_name_height_33">33dp</dimen>
+    <dimen name="promotion_commodity_head_promotion_type_height_12">12dp</dimen>
+
+    <!--PromotionInformation-->
+    <dimen name="promotion_information_dp_0">0dp</dimen>
+    <dimen name="promotion_information_dp_1">1dp</dimen>
+    <dimen name="promotion_information_dp_2.67">2.67dp</dimen>
+    <dimen name="promotion_information_dp_6.67">6.67dp</dimen>
+    <dimen name="promotion_information_dp_10">10dp</dimen>
+    <dimen name="promotion_information_dp_10.67">10.67dp</dimen>
+    <dimen name="promotion_information_dp_13.33">13.33dp</dimen>
+    <dimen name="promotion_information_dp_15">15dp</dimen>
+    <dimen name="promotion_information_dp_19">19dp</dimen>
+    <dimen name="promotion_information_dp_20">20dp</dimen>
+    <dimen name="promotion_information_dp_21">21dp</dimen>
+    <dimen name="promotion_information_dp_28">28dp</dimen>
+    <dimen name="promotion_information_dp_22">22dp</dimen>
+    <dimen name="promotion_information_dp_22.67">22.67dp</dimen>
+    <dimen name="promotion_information_dp_24">24dp</dimen>
+    <dimen name="promotion_information_dp_25">25dp</dimen>
+    <dimen name="promotion_information_dp_26">26dp</dimen>
+    <dimen name="promotion_information_dp_30">30dp</dimen>
+    <dimen name="promotion_information_dp_33.33">33.33dp</dimen>
+    <dimen name="promotion_information_dp_36">36dp</dimen>
+    <dimen name="promotion_information_dp_40">40dp</dimen>
+    <dimen name="promotion_information_dp_46.67">46.67dp</dimen>
+    <dimen name="promotion_information_dp_54">54dp</dimen>
+    <dimen name="promotion_information_dp_60">60dp</dimen>
+    <dimen name="promotion_information_dp_70">70dp</dimen>
+    <dimen name="promotion_information_dp_80">80dp</dimen>
+    <dimen name="promotion_information_dp_95">95dp</dimen>
+    <dimen name="promotion_information_dp_110">110dp</dimen>
+    <dimen name="promotion_information_dp_120">120dp</dimen>
+    <dimen name="promotion_information_dp_230">230dp</dimen>
+    <dimen name="promotion_information_dp_400">400dp</dimen>
+    <dimen name="promotion_information_dp_500">500dp</dimen>
+    <dimen name="promotion_information_dp_580">580dp</dimen>
+    <dimen name="promotion_information_dp_600">600dp</dimen>
+    <dimen name="promotion_information_dp_650">650dp</dimen>
+    <dimen name="promotion_information_dp_680">680dp</dimen>
+    <dimen name="promotion_information_dp_700">700dp</dimen>
+    <dimen name="promotion_information_dp_730">730dp</dimen>
+    <dimen name="promotion_information_dp_760">760dp</dimen>
+    <dimen name="promotion_information_dp_800">800dp</dimen>
+    <dimen name="promotion_information_dp_850">850dp</dimen>
+    <dimen name="promotion_information_dp_880">880dp</dimen>
+
+
+
+
+    <!--AdduserDialog-->
+    <dimen name="width_adduser_267">267dp</dimen>
+    <dimen name="width_adduser_341">341dp</dimen>
+    <dimen name="width_adduser_587">587dp</dimen>
+    <dimen name="height_adduser_67">67dp</dimen>
+    <dimen name="height_adduser_341">341dp</dimen>
+    <dimen name="gap_adduser_35">35dp</dimen>
+    <dimen name="gap_adduser_53">53dp</dimen>
+    <dimen name="gap_adduser_57">57dp</dimen>
+    <dimen name="gap_adduser_123">123dp</dimen>
+
+    <!--OrderdetailsListViewCheckAdapter-->
+    <dimen name="width_orderdetail_60">60dp</dimen>
+    <!--GiveawayAdapter-->
+    <dimen name="height_giveaway_40">40dp</dimen>
+    <dimen name="gap_giveaway_13">13dp</dimen>
+
+    <!--orderdetail-->
+    <dimen name="gap_orderdetail_7">7dp</dimen>
+    <dimen name="gap_orderdetail_13">13dp</dimen>
+    <dimen name="gap_orderdetail_20">20dp</dimen>
+    <dimen name="divide_orderdetail_1">1dp</dimen>
+
+    <!--OrderdetailsListViewCheckAdapter-->
+    <dimen name="width_mustorderdetail_67">67dp</dimen>
+    <dimen name="width_mustorderdetail_400">400dp</dimen>
+    <dimen name="height_mustorderdetail_1">1dp</dimen>
+    <dimen name="height_mustorderdetail_67">67dp</dimen>
+    <dimen name="height_mustorderdetail_120">120dp</dimen>
+    <dimen name="gap_mustorderdetail_7">7dp</dimen>
+    <dimen name="gap_mustorderdetail_8">8dp</dimen>
+    <dimen name="gap_mustorderdetail_9">9dp</dimen>
+    <dimen name="gap_mustorderdetail_16">16dp</dimen>
+    <dimen name="gap_mustorderdetail_20">20dp</dimen>
+
+
+
+    <!--orderselectwindows-->
+    <dimen name="width_orderselect_133">133dp</dimen>
+    <dimen name="width_orderselect_400">400dp</dimen>
+    <dimen name="height_orderselect_43">43dp</dimen>
+    <dimen name="gap_orderselect_25">25dp</dimen>
+    <dimen name="gap_orderselect_27">27dp</dimen>
+    <dimen name="gap_orderselect_30">30dp</dimen>
+    <dimen name="gap_orderselect_34">34dp</dimen>
+    <dimen name="gap_orderselect_54">54dp</dimen>
+
+
+    <!--OtherAuctionOrderdetailsDialog-->
+    <dimen name="width_otherorderdetail_5">5dp</dimen>
+    <dimen name="width_otherorderdetail_75">75dp</dimen>
+    <dimen name="width_otherorderdetail_287">287dp</dimen>
+    <dimen name="width_otherorderdetail_653">653dp</dimen>
+    <dimen name="height_otherorderdetail_27">27dp</dimen>
+    <dimen name="height_otherorderdetail_33">33dp</dimen>
+    <dimen name="height_otherorderdetail_47">47dp</dimen>
+    <dimen name="height_otherorderdetail_53">53dp</dimen>
+    <dimen name="height_otherorderdetail_573">573dp</dimen>
+    <dimen name="gap_otherorderdetail_1">1dp</dimen>
+    <dimen name="gap_otherorderdetail_3">3dp</dimen>
+    <dimen name="gap_otherorderdetail_7">7dp</dimen>
+    <dimen name="gap_otherorderdetail_8">8dp</dimen>
+    <dimen name="gap_otherorderdetail_20">20dp</dimen>
+    <dimen name="gap_otherorderdetail_27">27dp</dimen>
+    <dimen name="gap_otherorderdetail_53">53dp</dimen>
+    <dimen name="gap_otherorderdetail_80">80dp</dimen>
+    <dimen name="gap_otherorderdetail_113">113dp</dimen>
+
+
+    <!--PayAuctionOrderdetailsDialog-->
+    <dimen name="width_payorderdetail_5">5dp</dimen>
+    <dimen name="width_payorderdetail_75">75dp</dimen>
+    <dimen name="width_payorderdetail_287">287dp</dimen>
+    <dimen name="width_payorderdetail_653">653dp</dimen>
+    <dimen name="height_payorderdetail_33">33dp</dimen>
+    <dimen name="height_payorderdetail_47">47dp</dimen>
+    <dimen name="height_payorderdetail_53">53dp</dimen>
+    <dimen name="height_payorderdetail_573">573dp</dimen>
+    <dimen name="gap_payorderdetail_7">7dp</dimen>
+    <dimen name="gap_payorderdetail_8">8dp</dimen>
+    <dimen name="gap_payorderdetail_20">20dp</dimen>
+    <dimen name="gap_payorderdetail_27">27dp</dimen>
+    <dimen name="gap_payorderdetail_53">53dp</dimen>
+    <dimen name="gap_payorderdetail_80">80dp</dimen>
+    <dimen name="gap_payorderdetail_113">113dp</dimen>
+    <dimen name="gap_payorderdetail_375">375dp</dimen>
+    <dimen name="gap_payorderdetail_450">450dp</dimen>
+    <dimen name="gap_payorderdetail_455">455dp</dimen>
+    <dimen name="divide_payorderdetail_1">1dp</dimen>
+
+
+
+    <!--ShoppingCartGridNew-->
+    <dimen name="width_shopping_47">47dp</dimen>
+    <dimen name="width_shopping_81">81dp</dimen>
+    <dimen name="width_shopping_107">107dp</dimen>
+    <dimen name="width_shopping_115">115dp</dimen>
+    <dimen name="width_shopping_126">126dp</dimen>
+    <dimen name="width_shopping_133">133dp</dimen>
+    <dimen name="width_shopping_240">240dp</dimen>
+    <dimen name="width_shopping_867">867dp</dimen>
+    <dimen name="width_shopping_874">874dp</dimen>
+    <dimen name="height_shopping_1">1dp</dimen>
+    <dimen name="height_shopping_2">2dp</dimen>
+    <dimen name="height_shopping_3">3dp</dimen>
+    <dimen name="height_shopping_21">21dp</dimen>
+    <dimen name="height_shopping_35">35dp</dimen>
+    <dimen name="height_shopping_40">40dp</dimen>
+    <dimen name="height_shopping_47">47dp</dimen>
+    <dimen name="height_shopping_67">67dp</dimen>
+    <dimen name="height_shopping_107">107dp</dimen>
+    <dimen name="height_shopping_167">167dp</dimen>
+    <dimen name="height_shopping_174">174dp</dimen>
+    <dimen name="gap_shopping_5">5dp</dimen>
+    <dimen name="gap_shopping_6">6dp</dimen>
+    <dimen name="gap_shopping_7">7dp</dimen>
+    <dimen name="gap_shopping_10">10dp</dimen>
+    <dimen name="gap_shopping_15">15dp</dimen>
+    <dimen name="gap_shopping_17">17dp</dimen>
+    <dimen name="gap_shopping_19">19dp</dimen>
+    <dimen name="gap_shopping_20">20dp</dimen>
+    <dimen name="gap_shopping_21">21dp</dimen>
+    <dimen name="gap_shopping_26">26dp</dimen>
+    <dimen name="gap_shopping_33">33dp</dimen>
+    <dimen name="gap_shopping_35">35dp</dimen>
+    <dimen name="gap_shopping_40">40dp</dimen>
+    <dimen name="gap_shopping_50">50dp</dimen>
+    <dimen name="gap_shopping_53">53dp</dimen>
+    <dimen name="gap_shopping_60">60dp</dimen>
+    <dimen name="gap_shopping_180">180dp</dimen>
+
+    
+    <!-- acution -->
+    <dimen name="acution_recycleview_width">577dp</dimen>
+    <dimen name="acution_recycleview_margin_left">24dp</dimen>
+    <dimen name="acution_main_info_margin_left">33dp</dimen>
+    <dimen name="acution_main_info_margin_top">29dp</dimen>
+    <dimen name="acution_main_info_margin_right">37dp</dimen>
+    <dimen name="acution_main_info_image_wh">21dp</dimen>
+
+    <dimen name="acution_infomation_tips_width">350dp</dimen>
+    <dimen name="acution_infomation_layout_status_width">268dp</dimen>
+    <dimen name="acution_infomation_layout_status_heigth">108dp</dimen>
+    <dimen name="acution_infomation_layout_status2_wh">93dp</dimen>
+    <dimen name="acution_infomation_progress_height">13dp</dimen>
+    <dimen name="acution_item_height">167dp</dimen>
+    <dimen name="acution_item_icon_width">243dp</dimen>
+    <dimen name="acution_item_height_200">200dp</dimen>
+    <dimen name="acution_item_icon_width_150">150dp</dimen>
+    <dimen name="acution_item_add_price_width">101dp</dimen>
+    <dimen name="acution_item_right_width">313dp</dimen>
+    <dimen name="acution_item_right_margin_left">13dp</dimen>
+    <dimen name="acution_dialog_layout_button_height">67dp</dimen>
+    <dimen name="acution_dialog_layout_button_margin_top">129dp</dimen>
+    <dimen name="acution_dialog_layout_button_margin_bottm">67dp</dimen>
+    <dimen name="acution_dialog_layout_button_margin_bottm_73">73dp</dimen>
+    <dimen name="acution_dialog_button_width">267dp</dimen>
+
+    <dimen name="layout_acution_submit_width">285dp</dimen>
+    <dimen name="layout_acution_submit_height">53dp</dimen>
+    <dimen name="layout_acution_invoice_height">19dp</dimen>
+    <dimen name="layout_acution_invoice_width">23dp</dimen>
+
+    <dimen name="recycleview_padding_buttom">50dp</dimen>
+    <dimen name="load_icon_55">55dp</dimen>
+    <dimen name="load_icon_133">133dp</dimen>
+    <dimen name="load_icon_margin">-3dp</dimen>
+</resources>

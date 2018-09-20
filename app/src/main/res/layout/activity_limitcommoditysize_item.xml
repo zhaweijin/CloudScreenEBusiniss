@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#D3D3D3">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/promotion_information_dp_60">
+
+            <TextView
+                android:id="@+id/limitcommoditySize"
+                android:layout_width="@dimen/promotion_information_dp_800"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="商品名aaa"
+				android:layout_centerVertical="true"
+                android:textSize="@dimen/sp_27"
+                android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/promotion_information_dp_880"
+            android:text="x"
+			android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/noLimitNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/promotion_information_dp_850"
+            android:text=" "
+            android:visibility="gone"
+            android:textSize="@dimen/sp_27"
+            android:textColor="@color/black" />
+
+
+        <TextView
+                android:id="@+id/limitNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+				android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/multiply"
+                android:textSize="@dimen/sp_27"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+
+    <com.hiveview.dianshang.view.HiveRecyclerView
+        android:id="@+id/tv_recycler_view"
+        android:layout_width="@dimen/promotion_commodity_layout_width_1050"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/recycleview_padding_buttom" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".home.HomeActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_20"
+        android:layout_marginRight="@dimen/length_20"
+        android:text="申请成功！工作人员会在三个工作日之内与您联系，为您处理"
+        android:textSize="@dimen/sp_25"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/gap"
+        android:layout_above="@+id/back_my_order"
+        android:textColor="@android:color/black" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_my_order"
+        android:layout_centerInParent="true"
+        android:text="返回我的订单"
+        android:textSize="@dimen/sp_25"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

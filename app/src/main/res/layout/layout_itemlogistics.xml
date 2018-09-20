@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/length_30"
+        android:layout_height="@dimen/length_30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/gap_logistics_168"
+        android:src="@drawable/uncircle"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gap"
+        android:orientation="vertical"
+        android:background="@drawable/versionline"
+        android:layout_marginRight="@dimen/length_15"
+        android:layout_marginEnd="@dimen/length_15"
+        android:layout_below="@+id/img"
+        android:layout_toLeftOf="@+id/information"
+        android:layout_toStartOf="@+id/information">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_17"
+        android:text="2017-05-28 15:50:34  北京转运中心已发出"
+        android:textSize="@dimen/sp_20"
+        android:textColor="#3B3B3B"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/img"
+        android:layout_toEndOf="@+id/img"
+        android:layout_marginStart="@dimen/length_17"
+        android:textStyle="bold"/>
+</RelativeLayout>

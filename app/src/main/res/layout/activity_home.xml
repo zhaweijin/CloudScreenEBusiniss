@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="true">
+    <!--背景蒙层-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_apitestactivity_70"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/iv_red_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="大麦商场"
+            android:textSize="@dimen/sp_30" />
+
+        <com.hiveview.dianshang.view.TypeFaceTextView
+            android:id="@+id/tv_title"
+            android:layout_width="@dimen/length_120"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/length_10"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="1111111111111111111111111"
+            android:textSize="@dimen/sp_20" />
+    </LinearLayout>
+
+
+    <!--下半部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <ListView
+            android:id="@+id/dianshang_fenlei"
+            android:layout_width="@dimen/width_apitestactivity_218"
+            android:layout_height="@dimen/height_apitestactivity_462"
+            android:dividerHeight="@dimen/length_2"
+            android:focusableInTouchMode="false"
+            android:nextFocusDown="@id/dianshang_fenlei"
+            android:scrollbars="none"
+            android:visibility="gone"></ListView>
+
+        <include layout="@layout/activity_main_nav_bar"
+            android:layout_width="@dimen/width_apitestactivity_218"
+            android:layout_height="@dimen/height_apitestactivity_462"
+            android:id="@+id/main_leftbar">
+        </include>
+
+        <!--列表-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/length_2"
+            android:layout_toRightOf="@id/main_leftbar"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

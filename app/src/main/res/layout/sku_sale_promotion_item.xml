@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/select_comodity_promotion_item_margin_top_7"
+        android:layout_height="@dimen/select_comodity_promotion_item_height_33">
+
+        <TextView
+            android:id="@+id/promotion_type_name"
+            android:layout_width="@dimen/select_comodity_promotion_item_promotion_type_name_width_80"
+            android:layout_height="@dimen/select_comodity_promotion_item_promotion_type_name_height_33"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#C30016"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/promotion_bg"
+            android:gravity="center"
+            android:text="限购" />
+
+        <TextView
+            android:id="@+id/promotion_type_description"
+            android:layout_width="@dimen/sku_promotion_title_width_500"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/select_comodity_promotion_item_promotion_type_margin_left_15"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/promotion_type_name"
+            android:text="每人限购3件"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+
+</LinearLayout>

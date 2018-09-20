@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/category_nav"
+        android:layout_width="@dimen/width_commoditycategory_240"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/left_nav_bg_color">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/category_icon"
+            android:layout_width="@dimen/width_commoditycategory_153"
+            android:layout_height="@dimen/height_commoditycategory_39"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/gap_commoditycategory_45"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImageScaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_commoditycategory_233"
+            android:layout_above="@+id/listview"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/category_icon_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="@dimen/length_200"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_icon"
+            android:layout_marginLeft="@dimen/gap_commoditycategory_42"
+            android:layout_marginTop="@dimen/gap_commoditycategory_9"
+            android:singleLine="true"
+            android:text="生活家电"
+            android:textColor="#484848"
+            android:textSize="@dimen/sp_24" />
+
+        <com.hiveview.dianshang.view.HotWordListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/category_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/gap_commoditycategory_25"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:scrollbars="none"
+            android:transcriptMode="normal"></com.hiveview.dianshang.view.HotWordListView>
+
+        <ImageView
+            android:id="@+id/arrow_left"
+            android:layout_width="@dimen/length_20"
+            android:layout_height="@dimen/length_20"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_13"
+            android:background="@drawable/arrow__category_left"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <com.hiveview.dianshang.view.HiveRecyclerView
+        android:id="@+id/tv_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/category_nav"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/recycleview_padding_buttom" />
+
+</RelativeLayout>

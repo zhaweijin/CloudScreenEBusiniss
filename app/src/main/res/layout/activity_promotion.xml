@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D3D3D3">
+
+    <!--头部返回语句 距离top 102px-->
+    <include layout="@layout/activity_promotion_head"
+             android:layout_marginTop="@dimen/promotion_information_dp_22.67"
+             android:layout_marginBottom="@dimen/promotion_information_dp_2.67"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/promotion_information_dp_46.67"
+             android:id="@+id/include2">
+    </include>
+
+    <!--标语 距离top 110px-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/include2"
+        android:layout_marginLeft="@dimen/promotion_information_dp_110"
+        android:text="促销信息"
+        android:textSize="@dimen/sp_40"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <!--第一条分割线距离top共220px-->
+    <LinearLayout
+        android:id="@+id/line2"
+        android:background="#b8b8b8"
+        android:layout_marginTop="@dimen/promotion_information_dp_33.33"
+        android:layout_marginBottom="@dimen/promotion_information_dp_0"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="@dimen/promotion_information_dp_110"
+        android:layout_marginRight="@dimen/promotion_information_dp_110"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/promotion_information_dp_1">
+    </LinearLayout>
+
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/line2"-->
+        <!--android:layout_above="@+id/last"-->
+        <!--android:scrollbarTrackVertical="@drawable/scroll_color"-->
+        <!--android:scrollbarThumbVertical="@drawable/correctangle"-->
+        <!--android:scrollbarStyle="outsideOverlay"-->
+        <!--android:scrollbars="vertical"-->
+        <!--android:fadeScrollbars="false"-->
+        <!--android:minHeight="@dimen/promotion_information_dp_500"-->
+        <!--android:layout_marginRight="@dimen/promotion_information_dp_40"-->
+        <!--android:id="@+id/scrollView1">-->
+        <!--  android:layout_marginRight="83.33dp" -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_above="@+id/last"
+        android:layout_marginRight="@dimen/promotion_information_dp_40">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/promotion_information_dp_20"
+            android:layout_marginLeft="@dimen/promotion_information_dp_110"
+            android:divider="#FFFFFFFF"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@drawable/correctangle"
+            android:scrollbarTrackVertical="@drawable/scroll_color"
+            android:minHeight="@dimen/promotion_information_dp_500"
+            android:scrollbarStyle="outsideInset"
+            android:fadeScrollbars="false"
+            android:paddingRight="@dimen/promotion_information_dp_40"
+            android:id="@+id/homeList">
+        </ListView>
+    </RelativeLayout>
+    <!--</ScrollView>-->
+    <RelativeLayout
+        android:id="@+id/last"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+		android:layout_marginBottom="@dimen/promotion_information_dp_20"
+        android:layout_marginTop="@dimen/promotion_information_dp_10"
+        android:layout_marginLeft="@dimen/promotion_information_dp_110"
+        android:layout_marginRight="@dimen/promotion_information_dp_110">
+        <TextView
+            android:id="@+id/express"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="        "
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+</RelativeLayout>

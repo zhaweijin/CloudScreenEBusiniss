@@ -1,0 +1,26 @@
+<com.hiveview.dianshang.view.TypeFocusRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/commodity_item_type"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/gap_addressmanager_67"
+    tools:context=".home.APITestActivity">
+
+
+    <Button
+        android:id="@+id/item_type_textview"
+        android:layout_width="@dimen/selectcommoditytype_190"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:focusable="false"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:text="类型"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_27" />
+
+
+</com.hiveview.dianshang.view.TypeFocusRelativeLayout>

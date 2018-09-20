@@ -1,0 +1,121 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/commodity_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_110"
+        android:id="@+id/item"
+        android:focusable="true"
+        android:touchscreenBlocksFocus="true"
+        android:background="@drawable/focused_view_selector">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/commodity_icon"
+            android:layout_width="@dimen/gap_addressmanager_67"
+            android:layout_height="@dimen/gap_addressmanager_67"
+            android:layout_marginLeft="@dimen/length_10"
+            android:layout_centerVertical="true"
+            android:background="@drawable/commodity_small_icon"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImageScaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/invalid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_text_color"
+            android:text="@string/invalid"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_20"
+            android:textSize="@dimen/sp_16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/length_20"
+            android:layout_marginTop="@dimen/length_13"
+            android:id="@+id/layout_top"
+            android:layout_toRightOf="@+id/commodity_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/commodity_name"
+                android:layout_width="@dimen/order_cancel_dialog_height_400"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="aa"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/sp_16" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/length_20"
+                android:orientation="horizontal">
+                <!--"RMB"修改为"￥"-->
+                <TextView
+                    android:id="@+id/price_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/sp_24" />
+                <TextView
+                    android:id="@+id/commodity_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="233"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/sp_24" />
+            </LinearLayout>
+
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/length_20"
+            android:layout_marginTop="@dimen/length_15"
+            android:layout_below="@+id/layout_top"
+            android:layout_toRightOf="@+id/commodity_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/commodity_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/shoppingcart_item_type_margin_right_90"
+                android:singleLine="true"
+                android:text="XL"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:id="@+id/commodity_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/sp_16"
+                android:text="商品数量:3"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

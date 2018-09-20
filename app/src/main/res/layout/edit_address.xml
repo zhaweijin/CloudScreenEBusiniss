@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              tools:context=".home.HomeActivity"
+              android:background="#D3D3D3">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_53"
+        android:layout_marginTop="@dimen/length_60"
+        android:orientation="vertical">
+        <!--第一栏-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/first"
+                android:layout_width="@dimen/width_categorymainitemview_329"
+                android:layout_height="@dimen/length_80"
+                android:background="@drawable/shape1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/length_20"
+                    android:text="@string/recipient"
+                    android:textSize="@dimen/sp_24"
+                    android:textColor="#3B3B3B"/>
+
+                <EditText
+                    android:id="@+id/recipient"
+                    android:textSize="@dimen/sp_24"
+                    android:textColor="#3B3B3B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/radius"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:nextFocusDown="@+id/region"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second"
+                android:layout_width="@dimen/width_categorymainitemview_329"
+                android:layout_height="@dimen/length_80"
+                android:layout_marginLeft="@dimen/length_20"
+                android:background="@drawable/shape1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="@dimen/sp_24"
+                    android:textColor="#3B3B3B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/length_20"
+                    android:text="@string/phone"/>
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:textSize="@dimen/sp_24"
+                    android:textColor="#3B3B3B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/radius"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="phone"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--第二栏-->
+        <LinearLayout
+            android:id="@+id/third"
+            android:layout_width="@dimen/width"
+            android:layout_height="@dimen/length_80"
+            android:layout_marginTop="@dimen/length_20"
+            android:background="@drawable/shape1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="@dimen/sp_24"
+                android:textColor="#3B3B3B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/length_20"
+                android:text="@string/region"/>
+
+            <TextView
+                android:id="@+id/text_address"
+                android:textSize="@dimen/sp_24"
+                android:textColor="#3B3B3B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/radius"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/region"
+                android:textSize="@dimen/sp_24"
+                android:textColor="#3B3B3B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/length_33"
+                android:background="@null"
+                android:drawablePadding="@dimen/length_10"
+                android:drawableRight="@drawable/comein"
+                android:gravity="center"
+                android:text="@string/select"/>
+
+
+        </LinearLayout>
+
+
+        <!--第三栏-->
+        <LinearLayout
+            android:id="@+id/four"
+            android:layout_width="@dimen/width"
+            android:layout_height="@dimen/length_80"
+            android:layout_marginTop="@dimen/length_20"
+            android:background="@drawable/shape1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="@dimen/sp_24"
+                android:textColor="#3B3B3B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/length_20"
+                android:text="@string/street"/>
+
+            <TextView
+                android:id="@+id/text_street"
+                android:textSize="@dimen/sp_24"
+                android:textColor="#3B3B3B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/radius"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/street"
+                android:textSize="@dimen/sp_24"
+                android:textColor="#3B3B3B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/length_33"
+                android:background="@null"
+                android:drawablePadding="@dimen/length_10"
+                android:drawableRight="@drawable/comein"
+                android:gravity="center"
+                android:text="@string/select"/>
+
+
+        </LinearLayout>
+        <!-- 填写具体地址-->
+        <EditText
+            android:id="@+id/detailedAddress"
+            android:textSize="@dimen/sp_24"
+            android:textColor="#3B3B3B"
+            android:layout_width="@dimen/width"
+            android:layout_height="@dimen/length_200"
+            android:layout_marginTop="@dimen/length_20"
+            android:background="@drawable/editaddress_focusnew"
+            android:hint="@string/filladdress"
+            android:paddingLeft="@dimen/length_20"
+            android:textColorHint="#3E3E3E"
+            android:nextFocusUp="@+id/region"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"/>
+        <!--保存-->
+        <LinearLayout
+            android:layout_width="@dimen/width"
+            android:layout_height="@dimen/gap_addressmanager_67"
+            android:layout_marginTop="@dimen/length_20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/save_address"
+                android:textSize="@dimen/sp_24"
+                android:layout_width="@dimen/width_categorymainitemview_329"
+                android:layout_height="match_parent"
+                android:background="@drawable/refundbutton_focus"
+                android:text="@string/save"
+                android:textColor="@drawable/textsavecolor"/>
+
+            <Button
+                android:id="@+id/saveDefault"
+                android:textSize="@dimen/sp_24"
+                android:layout_width="@dimen/width_categorymainitemview_329"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/length_20"
+                android:background="@drawable/refundbutton_focus"
+                android:text="@string/saveDefault"
+                android:textColor="@drawable/textsavecolor"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="@dimen/width_addressmanager_213"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/length_60"
+        android:layout_marginLeft="@dimen/length_46"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/receiveQr"
+            android:layout_height="@dimen/width_addressmanager_213"
+            android:orientation="vertical"></LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qrcode"
+            android:textColor="#3b3b3b"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginTop="@dimen/gap_aftersale_16"
+            android:gravity="center"/>
+        
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_areascode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/totalCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>

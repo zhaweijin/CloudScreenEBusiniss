@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/length_110"
+    android:layout_height="@dimen/length_120"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    tools:context=".home.APITestActivity">
+
+        <ImageView
+            android:id="@+id/domy_shopping_icon"
+            android:layout_width="@dimen/width_mainactivity_89"
+            android:layout_height="@dimen/width_mainactivity_89"
+            android:layout_gravity="center"
+            android:background="@drawable/home_shopping_cart"
+            />
+        <TextView
+            android:id="@+id/model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/length_10"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/white"
+            android:text="购物车是空的" />
+
+</LinearLayout>

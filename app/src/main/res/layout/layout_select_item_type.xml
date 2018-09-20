@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/selectcommoditytype_255"
+    android:layout_height="@dimen/selectcommoditytype_77"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:padding="@dimen/length_3"
+    android:id="@+id/mm"
+    android:background="@drawable/focused_view_selector"
+    android:focusableInTouchMode="true"
+    tools:context=".home.APITestActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_27"
+        android:textColor="@color/half_white"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<com.hiveview.dianshang.view.FocusRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/focus_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/acution_item_selector"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".home.APITestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/acution_item_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/length_5"
+            android:background="@drawable/acution_item_unselect_bg">
+
+            <RelativeLayout
+                android:id="@+id/layout_icon"
+                android:layout_width="@dimen/acution_item_icon_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:placeholderImage="@drawable/commodity_big_icon"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:roundBottomRight="false"
+                    fresco:roundTopRight="false"
+                    fresco:roundedCornerRadius="@dimen/length_5" />
+
+                <LinearLayout
+                    android:id="@+id/layout_add_price"
+                    android:layout_width="@dimen/acution_item_add_price_width"
+                    android:layout_height="@dimen/acution_item_add_price_width"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/acution_item_add_price_bg"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/length_20"
+                        android:text="我要拍"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp_24" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/length_10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/add_acution_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:text="+"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/add_acution_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:text=""
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/add_acution_price_dot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:text=""
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/acution_item_right_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/acution_item_right_margin_left"
+                android:layout_toRightOf="@+id/layout_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/acution_commodity_name"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/length_5"
+                    android:text=""
+                    android:textColor="#252525"
+                    android:textSize="@dimen/sp_24" />
+
+                <LinearLayout
+                    android:id="@+id/acution_commodity_type"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="@dimen/length_20"
+                    android:layout_marginTop="@dimen/length_5"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/length_10">
+
+                    <TextView
+                        android:id="@+id/new_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/home_focus_icon_color"
+                        android:textSize="@dimen/sp_40" />
+
+                    <TextView
+                        android:id="@+id/new_price_dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/home_focus_icon_color"
+                        android:textSize="@dimen/sp_24" />
+
+                    <TextView
+                        android:id="@+id/old_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/length_20"
+                        android:text=""
+                        android:textColor="#979797"
+                        android:textSize="@dimen/sp_24" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/acution_infomation_progress_height"
+                    android:layout_marginRight="@dimen/length_5"
+                    android:layout_marginTop="@dimen/length_5"
+                    android:max="100"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/acution_info_top_bar_green_color" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/acution_status_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/acution_status_icon_toping" />
+
+            <ImageView
+                android:id="@+id/focus_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/acution_item_selected_bg"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/invalid_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/acution_item_invalid_bg"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/acution_finished_count_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/acution_finish"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_24" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</com.hiveview.dianshang.view.FocusRelativeLayout>

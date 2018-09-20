@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nostreet"
+        android:textSize="@dimen/sp_40"
+        android:textColor="#3b3b3b"
+        android:layout_marginTop="@dimen/gap_addressmanager_260"/>
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="@dimen/width_commoditycategory_240"
+        android:layout_height="@dimen/gap_addressmanager_67"
+        android:layout_marginTop="@dimen/gap_addressmanager_67"
+        android:text="@string/ok"
+        android:textColor="@drawable/textcolor"
+        android:textSize="@dimen/sp_24"
+        android:background="@drawable/refundbutton_focus"/>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/width_orderselect_400"
+    android:layout_height="match_parent"
+    >
+
+<RelativeLayout
+    android:layout_width="@dimen/width_orderselect_400"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="@dimen/width_orderselect_400"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_orderselect_54"
+        android:text="@string/ordertype"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_20"
+        android:layout_marginTop="@dimen/gap_orderselect_34"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:id="@+id/total_type"
+        android:layout_width="@dimen/width_orderselect_133"
+        android:layout_height="@dimen/height_orderselect_43"
+        android:layout_marginTop="@dimen/gap_orderselect_25"
+        android:text="@string/total"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:textSize="@dimen/sp_20"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="@drawable/orderselect_focus"/>
+
+    <Button
+        android:id="@+id/buy_type"
+        android:layout_width="@dimen/width_orderselect_133"
+        android:layout_height="@dimen/height_orderselect_43"
+        android:layout_alignBottom="@+id/total_type"
+        android:layout_marginLeft="@dimen/gap_orderselect_27"
+        android:layout_toEndOf="@+id/total_type"
+        android:text="@string/bestbuy"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_20"
+        android:background="@drawable/orderselect_focus"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/auction_type"
+        android:layout_width="@dimen/width_orderselect_133"
+        android:layout_height="@dimen/height_orderselect_43"
+        android:layout_alignStart="@+id/total_type"
+        android:layout_below="@+id/total_type"
+        android:layout_marginTop="@dimen/gap_orderselect_27"
+        android:text="@string/auction"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_20"
+        android:background="@drawable/orderselect_focus"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/auction_type"
+        android:layout_below="@+id/auction_type"
+        android:layout_marginTop="@dimen/gap_orderselect_30"
+        android:text="@string/orderstatus"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_20"/>
+
+    <Button
+        android:id="@+id/total_status"
+        android:layout_width="@dimen/width_orderselect_133"
+        android:layout_height="@dimen/height_orderselect_43"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="@dimen/gap_orderselect_25"
+        android:text="@string/total"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_20"
+        android:gravity="center"
+        android:background="@drawable/orderselect_focus"/>
+
+    <Button
+        android:id="@+id/pay_status"
+        android:layout_width="@dimen/width_orderselect_133"
+        android:layout_height="@dimen/height_orderselect_43"
+        android:layout_alignBottom="@+id/total_status"
+        android:layout_alignStart="@+id/buy_type"
+        android:text="@string/gopay"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_20"
+        android:background="@drawable/orderselect_focus"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/sendgoods_status"
+        android:layout_width="@dimen/width_orderselect_133"
+        android:layout_height="@dimen/height_orderselect_43"
+        android:layout_alignStart="@+id/total_status"
+        android:layout_below="@+id/total_status"
+        android:layout_marginTop="@dimen/gap_orderselect_27"
+        android:text="@string/goshipping"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_20"
+        android:background="@drawable/orderselect_focus"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/receivegoods_status"
+        android:layout_width="@dimen/width_orderselect_133"
+        android:layout_height="@dimen/height_orderselect_43"
+        android:layout_alignBottom="@+id/sendgoods_status"
+        android:layout_alignStart="@+id/pay_status"
+        android:text="@string/goreceive"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_20"
+        android:background="@drawable/orderselect_focus"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/complete_status"
+        android:layout_width="@dimen/width_orderselect_133"
+        android:layout_height="@dimen/height_orderselect_43"
+        android:layout_alignStart="@+id/sendgoods_status"
+        android:layout_below="@+id/sendgoods_status"
+        android:layout_marginTop="@dimen/gap_orderselect_27"
+        android:text="@string/complete"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_20"
+        android:background="@drawable/orderselect_focus"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/down_status"
+        android:layout_width="@dimen/width_orderselect_133"
+        android:layout_height="@dimen/height_orderselect_43"
+        android:layout_alignBottom="@+id/complete_status"
+        android:layout_alignStart="@+id/receivegoods_status"
+        android:text="@string/closed"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_20"
+        android:background="@drawable/orderselect_focus"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="@string/hidetip"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_20"/>
+</RelativeLayout>
+
+</LinearLayout>

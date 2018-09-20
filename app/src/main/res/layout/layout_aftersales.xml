@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/shapecolor"></LinearLayout>
+<LinearLayout
+    android:layout_width="@dimen/length_600"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D3D3D3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/length_13"
+        android:layout_marginBottom="@dimen/length_17"
+        android:text="@string/selectaftersaletip"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_20"
+        android:layout_marginTop="@dimen/gap_aftersale_49"/>
+
+   <ListView
+       android:id="@+id/listView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:divider="@drawable/line_copy"></ListView>
+</LinearLayout>
+
+
+
+</LinearLayout>

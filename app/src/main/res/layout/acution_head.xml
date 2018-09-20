@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_tips"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_80"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tips1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_50"
+            android:layout_toLeftOf="@+id/tips2"
+            android:singleLine="true"
+            android:text="@string/tips1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <ImageView
+            android:id="@+id/tips2"
+            android:layout_width="@dimen/acution_main_info_image_wh"
+            android:layout_height="@dimen/acution_main_info_image_wh"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_5"
+            android:layout_toLeftOf="@+id/tip3"
+            android:background="@drawable/tip_ok" />
+
+        <TextView
+            android:id="@+id/tip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/tips3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+    </RelativeLayout>
+</LinearLayout>

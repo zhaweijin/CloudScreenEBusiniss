@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".home.HomeActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/length_50"
+        android:layout_marginLeft="@dimen/length_50"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/payment_tips"
+            android:layout_width="@dimen/commodityinfomation_300"
+            android:layout_height="wrap_content"
+            android:text="支付金额199元，订单xxxxxx,请在2小时内完成支付，超时将取消订单"
+            android:textSize="@dimen/sp_22" />
+
+        <Button
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/length_20"
+            android:text="立即支付"
+            android:textSize="@dimen/sp_22" />
+    </LinearLayout>
+
+
+</LinearLayout>

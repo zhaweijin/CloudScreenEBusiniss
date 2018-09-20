@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#D3D3D3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/height_addressmanager_163"
+        android:layout_marginRight="@dimen/height_addressmanager_163"
+        android:layout_marginTop="@dimen/search_key_height_65"
+        android:background="#D3D3D3"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/aftersale"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_43"
+                android:id="@+id/textView"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="400-33243"
+                android:textSize="@dimen/sp_32"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/phonetip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/phone"
+                android:layout_toLeftOf="@+id/phone"
+                android:layout_toStartOf="@+id/phone"
+                android:text="@string/servicephone"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_32"/>
+        </RelativeLayout>
+        <include
+            layout="@layout/layout_item_aftersale"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_afterdetail_155"
+            android:layout_marginTop="@dimen/gap_afterdetail_48"></include>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape1"
+            android:layout_marginTop="@dimen/length_17">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/gap_collectionmain_28"
+                android:layout_marginTop="@dimen/gap_commoditycategory_25">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_24"
+                    android:textColor="#000000"
+                    android:text="@string/aftersaleway"/>
+                <TextView
+                    android:id="@+id/aftersaleway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_24"
+                    android:textColor="#000000"
+                    android:text="退货"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/gap_collectionmain_28"
+                android:layout_marginTop="@dimen/gap_afterdetail_44">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_24"
+                    android:textColor="#000000"
+                    android:text="@string/count"/>
+                <TextView
+                    android:id="@+id/countbottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_24"
+                    android:textColor="#000000"
+                    android:text="2件"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/gap_collectionmain_28"
+                android:layout_marginTop="@dimen/gap_afterdetail_44"
+                android:layout_marginBottom="@dimen/gap_afterdetail_37">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_24"
+                    android:textColor="#000000"
+                    android:text="@string/afterwhy"/>
+                <TextView
+                    android:id="@+id/afterwhy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_24"
+                    android:textColor="#000000"
+                    android:text="发票信息有误"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/gap_collectionmain_28"
+            android:gravity="center">
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="@dimen/width_categorymainitemview_329"
+                android:layout_height="@dimen/length_60"
+                android:text="@string/cancelapplication"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_24"
+                android:gravity="center"
+                android:background="@drawable/rectangle_refund"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

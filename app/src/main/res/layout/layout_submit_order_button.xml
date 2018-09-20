@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_user_center"
+        android:layout_width="@dimen/width_orderdetailsdialog_285"
+        android:layout_height="@dimen/height_orderdetailsdialog_61"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/length_20"
+        android:background="@drawable/shopping_cart_button_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择地址"
+            android:id="@+id/user_center_text"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_24" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_submit_order"
+        android:layout_width="@dimen/width_orderdetailsdialog_285"
+        android:layout_height="@dimen/height_orderdetailsdialog_61"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/width_addressmanager_23"
+        android:background="@drawable/shopping_cart_button_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="提交订单"
+            android:id="@+id/submit_order_text"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/sp_24" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_invoice"
+        android:layout_width="@dimen/width_orderdetailsdialog_285"
+        android:layout_height="@dimen/height_orderdetailsdialog_61"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/length_20"
+        android:background="@drawable/shopping_cart_button_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/invoice_status"
+            android:layout_width="@dimen/width_addressmanager_23"
+            android:layout_height="@dimen/gap_logistics_19"
+            android:layout_marginRight="@dimen/length_20"
+            android:layout_marginTop="@dimen/length_20"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/invoice_type"
+            android:background="@drawable/invoice_type_selected" />
+
+        <TextView
+            android:id="@+id/invoice_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/length_15"
+            android:gravity="center"
+            android:text="选择发票"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/sp_24" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

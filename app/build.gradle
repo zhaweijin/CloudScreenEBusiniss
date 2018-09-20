@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'me.tatarka.retrolambda'
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("Asia/Shanghai"))
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+
+    signingConfigs {
+        release {
+            storeFile file("../signature/carter_1.0s.jks")
+            storePassword 'carter'
+            keyAlias 'platform'
+            keyPassword 'carter'
+        }
+
+        debug {
+            storeFile file("../signature/carter_1.0s.jks")
+            storePassword 'carter'
+            keyAlias 'platform'
+            keyPassword 'carter'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.hiveview.dianshang"
+        minSdkVersion 17
+        targetSdkVersion 21
+        versionCode 39
+        versionName "1.2.2.14"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+    }
+
+
+    buildTypes {
+        release {
+            //签名
+            signingConfig signingConfigs.release
+
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+        }
+    }
+
+
+
+    /*android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            //release apk
+            if (outputFile != null && outputFile.name.endsWith('release.apk')) {
+                //这里修改apk文件名
+                def fileName = "DianshangCore-${defaultConfig.versionName}-${releaseTime()}.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }*/
+
+    //----------
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    //-----------
+    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/raw'] } }
+}
+
+retrolambda {
+    javaVersion JavaVersion.VERSION_1_7
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //test unit
+    //testCompile 'junit:junit:4.12'
+    //android
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    //recyclerview don not change!!!
+    compile 'com.android.support:recyclerview-v7:25.+'
+    //rxjava
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'io.reactivex:rxjava:1.1.4'
+    //bind view
+    compile 'com.jakewharton:butterknife:8.1.0'
+    apt 'com.jakewharton:butterknife-compiler:8.1.0'
+    //use method
+    //system build.gradle add>>classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    //app build.gradle top add >>apply plugin: 'android-apt'
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    //Retrofit2所需要的包
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    //ConverterFactory的Gson依赖包
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0-beta4'
+    //ConverterFactory的String依赖包
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    //rxjava 依赖包
+    //okhttp  替换retrofit内部的okhttp
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    compile 'com.squareup.okio:okio:1.7.0'
+    compile 'com.facebook.fresco:imagepipeline-okhttp3:0.14.1'
+    //fresco静态图片加载库
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    //stream java 8 lambda
+    compile 'com.annimon:stream:1.0.3'
+    //Rxview** bind view
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:0.4.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-support-v4:0.4.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-design:0.4.0'
+    compile files('jar/org.apache.http.legacy.jar')
+    //zxing
+    compile files('jar/core-3.2.1.jar')
+    //果仁儿
+    compile files('jar/libnutlet_1.3.5.jar')
+    compile 'com.android.support:multidex:1.0.0'
+    //收藏页面需要的图片加载方式
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('jar/hiveviewcore_20170829.jar')
+    compile files('jar/hiveviewcore2__v1.0.0_20180810.jar')
+    //ormlite 数据库
+    compile 'com.j256.ormlite:ormlite-android:5.0'
+    compile 'com.j256.ormlite:ormlite-core:5.0'
+}

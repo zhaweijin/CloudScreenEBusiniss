@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/information_sale_promotion_item_height_30"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        fresco:roundAsCircle="true"
+        fresco:backgroundImage="@android:color/white"
+        android:id="@+id/icon"
+        android:layout_width="@dimen/information_sale_promotion_item_icon_margin_7"
+        android:layout_height="@dimen/information_sale_promotion_item_icon_margin_7" />
+
+    <TextView
+        android:id="@+id/sale_promotion_text"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginLeft="@dimen/information_sale_promotion_item_text_margin_5"
+        android:textSize="@dimen/sp_19"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:layout_width="@dimen/commodityinfomation_600"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

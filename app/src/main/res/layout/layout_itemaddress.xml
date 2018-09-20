@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:background="#D3D3D3"
+              android:layout_marginBottom="@dimen/length_20"
+              android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="@dimen/width_addressmanager_800"
+        android:layout_height="@dimen/gap_commoditycategory_233"
+        android:orientation="horizontal"
+        android:background="@drawable/address_selector">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/length_33"
+            android:layout_marginRight="@dimen/length_20">
+            <ImageView
+                android:layout_width="@dimen/width_addressmanager_169"
+                android:layout_height="@dimen/width_addressmanager_169"
+                android:src="@drawable/usercenter"
+                android:scaleType="fitXY"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/gap_afterdetail_12">
+
+
+            <ImageView
+                android:id="@+id/angle_icon"
+                android:layout_width="@dimen/width_mainactivity_89"
+                android:layout_height="@dimen/width_mainactivity_89"
+                android:src="@drawable/angle"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/width_mainactivity_89"
+                android:textSize="@dimen/sp_43"
+                android:textColor="#3E3E3E"
+                android:layout_marginTop="@dimen/length_10"
+                android:text="2222"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="@dimen/length_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout6">
+                <ImageView
+                    android:layout_width="@dimen/gap_commoditycategory_25"
+                    android:layout_height="@dimen/gap_afterdetail_37"
+                    android:src="@drawable/phoneicon"/>
+                <TextView
+                    android:id="@+id/phoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3E3E3E"
+                    android:textSize="@dimen/sp_32"
+                    android:text="12345678901"
+                    android:layout_marginLeft="@dimen/length_20"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout6"
+                android:layout_marginTop="@dimen/length_20"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/length_3">
+                <ImageView
+                    android:layout_width="@dimen/width_addressmanager_23"
+                    android:layout_height="@dimen/length_30"
+                    android:src="@drawable/locationicon"/>
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_32"
+                    android:textColor="#3E3E3E"
+                    android:text="雍和航星科技园 3A-1 Eastdoor"
+                    android:layout_marginLeft="@dimen/length_20"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="@dimen/length_93"
+            android:layout_height="@dimen/height_addressmanager_173"
+            android:src="@drawable/deletedrawable"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@drawable/editaddress_focus"
+            android:layout_marginLeft="@dimen/length_27"/>
+
+
+</LinearLayout>

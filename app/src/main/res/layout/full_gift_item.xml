@@ -1,0 +1,45 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/full_gift_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.APITestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_30"
+        android:id="@+id/full_gift_focus_item"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/focused_view_selector"
+        android:layout_marginLeft="@dimen/length_30"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/full_gift_goods_name"
+            android:layout_width="@dimen/shoppingcart_item_gift_name_width_450"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/length_15"
+            android:text="漂亮"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/full_gift_goods_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/length_5"
+            android:text="x1"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

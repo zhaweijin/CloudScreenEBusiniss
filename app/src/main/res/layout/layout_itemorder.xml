@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/width_ordermain_954"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/shadow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_commoditycategory_153"
+        android:orientation="horizontal">
+    <!--第一部分-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--时间订货单一栏-->
+        <include
+            layout="@layout/order_item_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_afterdetail_54"
+            ></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/length_17"
+            android:gravity="center_vertical">
+            <!--放置照片-->
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img1"
+                android:layout_width="@dimen/height_afterdetail_83"
+                android:layout_height="@dimen/height_afterdetail_83"
+                android:layout_centerVertical="true"
+                android:background="@drawable/commodity_small_icon"
+                actualImageScaleType="centerCrop"
+                placeholderImageScaleType="centerCrop"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img2"
+                android:layout_width="@dimen/height_afterdetail_83"
+                android:layout_height="@dimen/height_afterdetail_83"
+                android:layout_centerVertical="true"
+                android:background="@drawable/commodity_small_icon"
+                actualImageScaleType="centerCrop"
+                placeholderImageScaleType="centerCrop"
+                android:layout_marginLeft="@dimen/length_7"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img3"
+                android:layout_width="@dimen/height_afterdetail_83"
+                android:layout_height="@dimen/height_afterdetail_83"
+                android:layout_centerVertical="true"
+                android:background="@drawable/commodity_small_icon"
+                actualImageScaleType="centerCrop"
+                placeholderImageScaleType="centerCrop"
+                android:layout_marginLeft="@dimen/length_7"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img4"
+                android:layout_width="@dimen/height_afterdetail_83"
+                android:layout_height="@dimen/height_afterdetail_83"
+                android:layout_centerVertical="true"
+                android:background="@drawable/commodity_small_icon"
+                actualImageScaleType="centerCrop"
+                placeholderImageScaleType="centerCrop"
+                android:layout_marginLeft="@dimen/length_7"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img5"
+                android:layout_width="@dimen/height_afterdetail_83"
+                android:layout_height="@dimen/height_afterdetail_83"
+                android:layout_centerVertical="true"
+                android:background="@drawable/commodity_small_icon"
+                actualImageScaleType="centerCrop"
+                placeholderImageScaleType="centerCrop"
+                android:layout_marginLeft="@dimen/length_7"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img6"
+                android:layout_width="@dimen/height_afterdetail_83"
+                android:layout_height="@dimen/height_afterdetail_83"
+                android:layout_centerVertical="true"
+                android:background="@drawable/commodity_small_icon"
+                actualImageScaleType="centerCrop"
+                placeholderImageScaleType="centerCrop"
+                android:layout_marginLeft="@dimen/length_7"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img7"
+                android:layout_width="@dimen/height_afterdetail_83"
+                android:layout_height="@dimen/height_afterdetail_83"
+                android:layout_centerVertical="true"
+                android:background="@drawable/commodity_small_icon"
+                actualImageScaleType="centerCrop"
+                placeholderImageScaleType="centerCrop"
+                android:layout_marginLeft="@dimen/length_7"/>
+            <LinearLayout
+                android:id="@+id/countLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/gap_afterdetail_24"
+                android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textSize="@dimen/sp_13"
+                android:textColor="#393939"/>
+            <TextView
+                android:id="@+id/imgCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#393939"
+                android:textSize="@dimen/sp_24"
+                android:text="15"
+                android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="@dimen/length_1"
+        android:layout_height="match_parent"
+        android:background="#515658"></LinearLayout>
+
+
+    <!--第二部分-->
+    <LinearLayout
+        android:layout_width="@dimen/width_afterdetai_239"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_aftersale_16"
+            android:layout_marginTop="@dimen/length_17"
+            android:layout_marginBottom="@dimen/length_3"
+            android:text="账单金额"
+            android:textSize="@dimen/sp_16"
+            android:textColor="#393939"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/gap_aftersale_16">
+            <TextView
+                android:id="@+id/moneytype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF3B00"
+                android:textSize="@dimen/sp_32"
+                android:text="¥"/>
+			<!--去掉小数点及小数点后部分-->
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9999999"
+                android:textColor="#FF3B00"
+                android:textSize="@dimen/sp_32"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/state"
+            android:layout_width="@dimen/width_ordermain_176"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/payfinished_icon"
+            android:text="交易完成"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#393939"
+            android:gravity="center"
+            android:focusable="false" />
+    </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
